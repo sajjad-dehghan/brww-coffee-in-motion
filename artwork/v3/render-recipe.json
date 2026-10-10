@@ -1,0 +1,62 @@
+{
+  "frames": 420,
+  "size": [
+    680,
+    960
+  ],
+  "period_seconds": 14,
+  "fps": 30,
+  "yaw": "pi + sin(frame / 420 * 2pi) * 1.15",
+  "source_model": "dist/cup-model.js",
+  "source_materials": [
+    "paper-texture-v2.webp",
+    "sleeve-texture-v2.webp"
+  ],
+  "video_ffmpeg_args": [
+    "-y",
+    "-loop",
+    "1",
+    "-framerate",
+    "30",
+    "-i",
+    "D:\\Projects\\Coffee\\site\\artwork\\v3\\cup-background.png",
+    "-framerate",
+    "30",
+    "-i",
+    "D:\\Projects\\Coffee\\site\\artwork\\v3\\cup-frames\\%03d.png",
+    "-filter_complex",
+    "[0:v][1:v]overlay=shortest=1:format=rgb,scale=in_range=full:out_color_matrix=bt709:out_range=tv,format=yuv420p[v]",
+    "-map",
+    "[v]",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "slow",
+    "-crf",
+    "16",
+    "-colorspace",
+    "bt709",
+    "-color_primaries",
+    "bt709",
+    "-color_trc",
+    "bt709",
+    "-color_range",
+    "tv",
+    "-an",
+    "-movflags",
+    "+faststart",
+    "D:\\Projects\\Coffee\\site\\dist\\assets\\cup-animation-v3.mp4"
+  ],
+  "poster_quality": 94,
+  "webp_quality": 88,
+  "background_encode_rgb": [
+    30,
+    19,
+    12
+  ],
+  "target_css_rgb": [
+    29,
+    18,
+    11
+  ]
+}

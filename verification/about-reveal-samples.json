@@ -1,0 +1,422 @@
+[
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "0.5205",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, -5.14011, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "0.5205",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 5.14011, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912362
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "0.656996",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, -2.37313, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "0.656996",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 2.37313, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912424
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "0.753693",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, -1.21145, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "0.753693",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 1.21145, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912482
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "0.837996",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, -0.570616, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "0.837996",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0.570616, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912538
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "0.908092",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, -0.235227, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "0.908092",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0.235227, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912592
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "0.961108",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, -0.0768835, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "0.961108",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0.0768835, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912647
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "0.993094",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, -0.0155936, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "0.993094",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0.0155936, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912703
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, -0.000675344, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0.000675344, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912758
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912816
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912872
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912927
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645912986
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645913050
+  },
+  {
+    "benefits": [
+      {
+        "class": "benefit benefit-one scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-two scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, -38, 0)"
+      },
+      {
+        "class": "benefit benefit-three scroll-reveal revealed",
+        "opacity": "1",
+        "top": 446,
+        "transform": "matrix(1, 0, 0, 1, 0, 0)"
+      },
+      {
+        "class": "benefit benefit-four scroll-reveal",
+        "opacity": "0",
+        "top": 639,
+        "transform": "matrix(1, 0, 0, 1, 38, 0)"
+      }
+    ],
+    "scrollY": 984,
+    "time": 1791645913105
+  }
+]

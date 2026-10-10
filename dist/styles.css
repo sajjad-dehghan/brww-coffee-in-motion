@@ -34,3 +34,23 @@ main{overflow-x:clip}
 @media(max-width:359px){.hero{height:900px}.hero-art{left:calc(50% - 205px);top:470px;width:410px;height:410px}}
 
 @media(max-width:680px){.site-header::before{content:'';position:fixed;left:0;right:0;top:0;height:86px;background:linear-gradient(#1d120bf5 0%,#1d120be8 66%,#1d120b00 100%);z-index:-1;pointer-events:none}}
+
+/* Reference: each row fades and slides inward as it reaches the viewport.
+   Cup rotation remains time-based and independent of this entrance. */
+.benefit.scroll-reveal{opacity:0;transform:translateX(-38rem);transition:opacity .5s ease-out,transform .5s cubic-bezier(.25,1,.5,1)}
+.benefit-three.scroll-reveal,.benefit-four.scroll-reveal{transform:translateX(38rem)}
+.benefit.scroll-reveal.revealed{opacity:1;transform:translateX(0)}
+@media(max-width:680px){.benefit.scroll-reveal{transform:translateX(-20px)}.benefit-three.scroll-reveal,.benefit-four.scroll-reveal{transform:translateX(20px)}.benefit.scroll-reveal.revealed{transform:translateX(0)}}
+@media(prefers-reduced-motion:reduce){.benefit.scroll-reveal{opacity:1;transform:none}}
+
+.cup-video{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;opacity:0;pointer-events:none}
+.video-ready .cup-video{opacity:1}.video-ready #turning-cup{visibility:hidden}.webgl-ready .cup-video{visibility:hidden}
+
+.cup-canvas{visibility:hidden}.webgl-ready .cup-canvas{visibility:visible}
+
+@media(max-width:680px){.cup-scene{width:min(300px,100%);height:auto;aspect-ratio:300/424}.cup-scene #turning-cup{position:absolute;inset:0}}
+
+/* A quiet foreground lift, following the pointer over opaque artwork only. */
+.hero-art{transform-origin:55% 65%;transform:perspective(1400rem) translate3d(var(--hero-x,0rem),var(--hero-y,0rem),var(--hero-z,0rem)) rotateX(var(--hero-rx,0deg)) rotateY(var(--hero-ry,0deg)) rotateZ(var(--hero-rz,0deg)) scale(var(--hero-scale,1));filter:drop-shadow(0 5rem 5rem #0005) drop-shadow(0 20rem 18rem #0004);transition:transform .45s cubic-bezier(.22,1,.36,1),filter .35s ease-out}
+.hero-art.depth-active{will-change:transform;filter:drop-shadow(0 7rem 6rem #0005) drop-shadow(0 25rem 21rem #0005);transition:transform .18s ease-out,filter .35s ease-out}
+@media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.hero-art,.hero-art.depth-active{transform:none;will-change:auto}}

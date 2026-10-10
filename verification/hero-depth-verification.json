@@ -1,0 +1,52 @@
+{
+  "revision": "v5-hero-pointer-depth",
+  "reference": "https://www.scrolltide.co/templates/coffee",
+  "source_segment_seconds": [
+    0,
+    1
+  ],
+  "reference_evidence": "hero-reference-tracking.json",
+  "observation": "Very subtle movement of cup regions (roughly 0-1px per axis in sampled frames) with static text and a soft foreground shadow. Source code is unavailable, so exact effect parameters cannot be recovered.",
+  "implementation": {
+    "same_transparent_artwork": true,
+    "move_x_rem_max": 2.5,
+    "move_y_rem_range": [
+      -2.7,
+      0.3
+    ],
+    "depth_rem": 6,
+    "perspective_rem": 1400,
+    "scale": 1.002,
+    "tilt_x_deg_max": 0.45,
+    "tilt_y_deg_max": 0.6,
+    "tilt_z_deg_max": 0.13,
+    "follow_transition_seconds": 0.18,
+    "return_transition_seconds": 0.45,
+    "alpha_hit_test": {
+      "size": [
+        160,
+        160
+      ],
+      "threshold": 48
+    },
+    "touch_and_reduced_motion": "disabled",
+    "scroll_control": false
+  },
+  "browser_checks": {
+    "engine": "Codex in-app browser",
+    "viewport": [
+      960,
+      572
+    ],
+    "left_and_right_cup_hover": "passed",
+    "transparent_space_returns_to_rest": "passed",
+    "header_and_copy_bounds_unchanged": "passed",
+    "scroll_positions": [
+      0
+    ],
+    "explore_link_navigates_to_menu": "passed",
+    "native_firefox": "not available",
+    "touch_and_os_reduced_motion_runtime": "not emulated"
+  },
+  "preview": "hero-depth-preview.gif"
+}

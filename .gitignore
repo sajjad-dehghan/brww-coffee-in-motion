@@ -6,3 +6,9 @@ asset-review.jpg
 discovery-review.jpg
 verification/deployment.json
 verification/discovery-motion-capture/
+
+artwork/v3/cup-frames/
+verification/about-motion-capture/
+
+verification/hero-depth-capture/
+verification/*-encode.log

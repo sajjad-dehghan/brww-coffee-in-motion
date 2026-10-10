@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="320" viewBox="0 0 1280 320" role="img" aria-labelledby="title description">
+  <title id="title">BRWW — Coffee in Motion</title>
+  <desc id="description">Warm espresso tones, a sage accent, and a minimal coffee cup mark.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1"><stop stop-color="#110d09"/><stop offset="1" stop-color="#302117"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#b5a354" stop-opacity=".14"/><stop offset="1" stop-color="#b5a354" stop-opacity="0"/></radialGradient>
+  </defs>
+  <rect width="1280" height="320" rx="24" fill="url(#background)"/>
+  <rect x="1" y="1" width="1278" height="318" rx="23" fill="none" stroke="#f0e7d0" stroke-opacity=".12"/>
+  <ellipse cx="1090" cy="160" rx="330" ry="250" fill="url(#glow)"/>
+  <text x="64" y="70" font-family="Arial,Helvetica,sans-serif" font-size="15" letter-spacing="4" fill="#a4b6a9">AN INTERACTIVE COFFEE EXPERIENCE</text>
+  <text x="60" y="171" font-family="Arial,Helvetica,sans-serif" font-size="94" font-weight="700" letter-spacing="5" fill="#ece4cc">BRWW</text>
+  <text x="64" y="223" font-family="Georgia,serif" font-size="37" fill="#baa855">Coffee in Motion.</text>
+  <text x="64" y="270" font-family="Arial,Helvetica,sans-serif" font-size="16" fill="#c4b7a0">Crafted by Sajjad Dehghan · Visual reconstruction &amp; creative development</text>
+  <g transform="translate(996 49) rotate(8 82 105)" fill="none" stroke="#ece4cc" stroke-width="2.5" opacity=".72">
+    <path d="M24 75h117l-14 174H41Z"/><path d="M19 62h126v13H19Z"/><path d="M29 62l4-16h96l6 16"/>
+    <path d="M29 132h107l-6 63H35Z"/><text x="45" y="174" fill="#ece4cc" stroke="none" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700">BRWW</text>
+    <path d="M61 25c-12-12 12-15 0-27M89 25c-12-12 12-15 0-27" stroke="#a4b6a9"/>
+  </g>
+  <path d="M1208 40v26m-13-13h26" stroke="#a4b6a9" stroke-width="1.5" opacity=".6"/>
+</svg>

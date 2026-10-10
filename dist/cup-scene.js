@@ -13,10 +13,10 @@ function surface(kind) {
   return map;
 }
 
-export async function mountCup(container) {
+export async function mountCup(container, options={}) {
   let renderer;
-  try {renderer=new T.WebGLRenderer({alpha:true,antialias:true,powerPreference:'low-power'});} catch {return null;}
-  renderer.setPixelRatio(Math.min(devicePixelRatio,2));renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;
+  try {renderer=new T.WebGLRenderer({alpha:true,antialias:true,powerPreference:'high-performance',preserveDrawingBuffer:!!options.exportMode});} catch {return null;}
+  renderer.setPixelRatio(Math.min(Math.max(devicePixelRatio,1.5),2));renderer.outputColorSpace=T.SRGBColorSpace;renderer.toneMapping=T.ACESFilmicToneMapping;renderer.toneMappingExposure=1.15;
   const scene=new T.Scene();const camera=new T.PerspectiveCamera(27,1,.1,30);camera.position.set(0,.2,6.9);camera.lookAt(0,.03,0);
   scene.add(new T.HemisphereLight(0xfff3d9,0x291d16,2.0));
   const key=new T.DirectionalLight(0xffedd4,3.3);key.position.set(-3,4,4);scene.add(key);
@@ -38,15 +38,16 @@ export async function mountCup(container) {
   const reduced=matchMedia('(prefers-reduced-motion: reduce)');
   // Time-based continuous revolution: scroll never controls the object's pose.
   // Clamp elapsed time after tab suspension so the cup resumes without a jump.
-  const draw=time=>{raf=0;if(disposed||!visible||document.hidden){lastTime=0;return;}const delta=lastTime?Math.min((time-lastTime)/1000,.05):0;lastTime=time;if(!reduced.matches)current+=delta*Math.PI*2/14;cup.rotation.y=reduced.matches?Math.PI:Math.PI+Math.sin(current-Math.PI)*1.15;renderer.render(scene,camera);if(!reduced.matches)raf=requestAnimationFrame(draw);};
-  const request=()=>{if(!raf&&visible)raf=requestAnimationFrame(draw);};
-  const resize=()=>{const r=container.getBoundingClientRect();if(!r.width||!r.height)return;renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.updateProjectionMatrix();request();};
+  const draw=time=>{raf=0;if(options.exportMode||disposed||!visible||document.hidden){lastTime=0;return;}const delta=lastTime?Math.min((time-lastTime)/1000,.05):0;lastTime=time;if(!reduced.matches)current+=delta*Math.PI*2/14;cup.rotation.y=reduced.matches?Math.PI:Math.PI+Math.sin(current-Math.PI)*1.15;renderer.render(scene,camera);if(!reduced.matches)raf=requestAnimationFrame(draw);};
+  const request=()=>{if(!options.exportMode&&!raf&&visible)raf=requestAnimationFrame(draw);};
+  const resize=()=>{const r=options.exportMode?{width:680,height:960}:container.getBoundingClientRect();if(!r.width||!r.height)return;renderer.setSize(r.width,r.height,false);camera.aspect=r.width/r.height;camera.updateProjectionMatrix();request();};
   const ro=new ResizeObserver(resize);ro.observe(container);
   const io=new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;lastTime=0;if(visible){resize();request();}},{rootMargin:'80px'});io.observe(container);
   const resume=()=>{lastTime=0;request();};document.addEventListener('visibilitychange',resume);reduced.addEventListener('change',resume);
-  renderer.domElement.className='cup-canvas';renderer.domElement.setAttribute('aria-hidden','true');container.append(renderer.domElement);container.classList.add('webgl-ready');
-  renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();visible=false;container.classList.remove('webgl-ready');});
-  renderer.domElement.addEventListener('webglcontextrestored',()=>{visible=true;container.classList.add('webgl-ready');resize();request();});
+  renderer.domElement.className='cup-canvas';renderer.domElement.setAttribute('aria-hidden','true');container.append(renderer.domElement);container.classList.add('webgl-ready');container.dataset.renderer='webgl2';container.dispatchEvent(new Event('cup-renderer-change'));
+  renderer.domElement.addEventListener('webglcontextlost',e=>{e.preventDefault();visible=false;container.classList.remove('webgl-ready');container.dataset.renderer='pre-rendered';container.dataset.fallbackReason='webgl-context-lost';lastTime=0;cancelAnimationFrame(raf);raf=0;container.dispatchEvent(new Event('cup-renderer-change'));});
+  renderer.domElement.addEventListener('webglcontextrestored',()=>{visible=true;container.classList.add('webgl-ready');container.dataset.renderer='webgl2';container.dispatchEvent(new Event('cup-renderer-change'));resize();request();});
   resize();
-  return {dispose(){disposed=true;cancelAnimationFrame(raf);ro.disconnect();io.disconnect();document.removeEventListener('visibilitychange',resume);reduced.removeEventListener('change',resume);scene.traverse(o=>{o.geometry?.dispose();if(o.material)o.material.dispose();});paper.dispose();sleeve.dispose();renderer.dispose();}};
+  if(options.exportMode){visible=false;cancelAnimationFrame(raf);raf=0;renderer.setPixelRatio(1);renderer.setSize(680,960,false);camera.aspect=680/960;camera.updateProjectionMatrix();}
+  return {async exportFrame(angle){cup.rotation.y=angle;renderer.render(scene,camera);return new Promise(resolve=>renderer.domElement.toBlob(resolve,'image/png'));},dispose(){disposed=true;cancelAnimationFrame(raf);ro.disconnect();io.disconnect();document.removeEventListener('visibilitychange',resume);reduced.removeEventListener('change',resume);scene.traverse(o=>{o.geometry?.dispose();if(o.material)o.material.dispose();});paper.dispose();sleeve.dispose();renderer.dispose();}};
 }

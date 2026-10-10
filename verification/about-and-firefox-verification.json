@@ -1,0 +1,65 @@
+{
+  "revision": "v4-about-scroll-and-browser-fallback",
+  "reference": "https://www.scrolltide.co/templates/coffee",
+  "reference_tracking": "about-reference-tracking.json",
+  "observations": {
+    "first_row": "Fade and inward horizontal translation visible around 4.6-5.0 seconds; left heading moves from x75 to x91 at 960px.",
+    "second_row": "Reveals later as the page scrolls farther down.",
+    "recording_limit": "Recorded preview; original implementation and Firefox installation are not accessible."
+  },
+  "implementation": {
+    "entrance_seconds": 0.5,
+    "horizontal_start_rem": 38,
+    "trigger_viewport_fraction": 0.84,
+    "independent_rows": true,
+    "cup_motion_scroll_control": false
+  },
+  "browser_checks": {
+    "engine": "Codex in-app browser",
+    "reference_size": [
+      960,
+      572
+    ],
+    "first_row_reveals_while_second_row_hidden": true,
+    "second_row_reveals_after_more_scroll": true,
+    "video_without_webgl": {
+      "size": [
+        680,
+        960
+      ],
+      "fps": 30,
+      "period_seconds": 14,
+      "stationary_scroll_positions": [
+        1135.199951171875
+      ],
+      "start_time": 7.845496,
+      "end_time": 9.501775,
+      "playing": true
+    },
+    "webp_without_webgl_or_video": {
+      "size": [
+        680,
+        960
+      ],
+      "frames": 420,
+      "duration_ms": 13999,
+      "image_loaded_in_browser": true
+    },
+    "mobile_390": {
+      "scroll_width": 390,
+      "cup_width": 300
+    },
+    "mobile_320": {
+      "scroll_width": 320,
+      "cup_width": 272,
+      "cup_bounds": [
+        24,
+        296
+      ]
+    },
+    "firefox_native_test": "unavailable; no connected Firefox control",
+    "errors_observed": []
+  },
+  "reduced_motion": "Implemented; OS/browser emulation was not available for direct runtime verification.",
+  "publication": "Local preview updated. Earlier source-push connection resets still prevent a verified hosted deployment."
+}

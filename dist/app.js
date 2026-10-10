@@ -1,4 +1,5 @@
 import {products,money,sanitiseCart,updateQuantity,cartCount,cartTotal,recommend} from './store.js';
+import {mountHeroDepth} from './hero-depth.js';
 
 const q=s=>document.querySelector(s);
 q('.bean-scene').innerHTML='<img class="discovery-art" src="assets/discovery-v2.webp" alt="" width="1536" height="1024" loading="lazy">';
@@ -68,23 +69,69 @@ q('.mobile-toggle').addEventListener('click',()=>{const open=document.body.class
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.body.classList.remove('nav-open');q('.mobile-toggle').setAttribute('aria-expanded','false');q('.mobile-toggle').setAttribute('aria-label','Open navigation');}});
 
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+mountHeroDepth(q('.hero'),q('.hero-art'),reduceMotion);
 const discoveryArt=q('.discovery-art');
 let discoveryVisible=false;
 function updateDiscoveryMotion(){discoveryArt.classList.toggle('motion-running',discoveryVisible&&!document.hidden);}
 const discoveryObserver=new IntersectionObserver(entries=>{discoveryVisible=entries[0].isIntersecting;updateDiscoveryMotion();},{rootMargin:'50px'});
 discoveryObserver.observe(discoveryArt);
 document.addEventListener('visibilitychange',updateDiscoveryMotion);
-const cup=q('#turning-cup'),about=q('.about'),marquee=q('.marquee span');
-let lastFrame=-1,ticking=false,framesReady=false,cupModel=null;
-const frameImages=[];
-function preloadFrames(){if(framesReady)return;framesReady=true;import('./cup-scene.js').then(async({mountCup})=>{cupModel=await mountCup(q('.cup-scene'));queueScroll();}).catch(()=>{});}
-const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))preloadFrames();},{rootMargin:'600px'});observer.observe(about);
+const cup=q('#turning-cup'),about=q('.about'),cupContainer=q('.cup-scene'),marquee=q('.marquee span');
+const benefits=[...document.querySelectorAll('.benefit')];
+benefits.forEach(el=>el.classList.add('scroll-reveal'));
+let ticking=false,modelRequested=false,cupVisible=false;
+const cupPoster='assets/cup-poster-v3.webp',cupAnimation='assets/cup-animation-v3.webp';
+const cupVideo=document.createElement('video');
+cupVideo.className='cup-video';cupVideo.muted=true;cupVideo.loop=true;cupVideo.playsInline=true;
+cupVideo.setAttribute('muted','');cupVideo.setAttribute('playsinline','');cupVideo.setAttribute('aria-hidden','true');
+cupVideo.preload='none';cupVideo.poster=cupPoster;cupContainer.append(cupVideo);
+let videoFailed=new URLSearchParams(location.search).get('cup-renderer')==='webp',playPending=false;
+function imageFallback(){videoFailed=true;cupContainer.classList.remove('video-ready');updateCupFallback();}
+cupVideo.addEventListener('error',imageFallback);
+cupVideo.addEventListener('playing',()=>{
+  if(cupContainer.classList.contains('webgl-ready')||!cupVisible||document.hidden||reduceMotion.matches){cupVideo.pause();return;}
+  cupContainer.classList.add('video-ready');cupContainer.dataset.renderer='pre-rendered-video';
+});
+function updateCupFallback(){
+  const fallback=!cupContainer.classList.contains('webgl-ready');
+  const animated=fallback&&cupVisible&&!document.hidden&&!reduceMotion.matches;
+  cupContainer.dataset.motion=reduceMotion.matches?'reduced':cupVisible&&!document.hidden?'running':'paused';
+  if(!fallback||!animated){cupVideo.pause();cupContainer.classList.remove('video-ready');}
+  if(animated&&modelRequested&&cupContainer.dataset.renderer?.startsWith('pre-rendered')&&!videoFailed){
+    if(!cupVideo.getAttribute('src'))cupVideo.src='assets/cup-animation-v3.mp4';
+    if(cupVideo.paused&&!playPending){playPending=true;cupVideo.play().catch(error=>{if(error.name!=='AbortError')imageFallback();}).finally(()=>{playPending=false;});}
+  }
+  const next=animated&&videoFailed?cupAnimation:cupPoster;
+  if(cup.getAttribute('src')!==next)cup.src=next;
+}
+function loadCup(){
+  if(modelRequested)return;modelRequested=true;
+  if(['image','webp'].includes(new URLSearchParams(location.search).get('cup-renderer'))){
+    cupContainer.dataset.renderer='pre-rendered';updateCupFallback();return;
+  }
+  import('./cup-scene.js').then(async({mountCup})=>{
+    const model=await mountCup(cupContainer);
+    if(!model){cupContainer.dataset.renderer='pre-rendered';cupContainer.dataset.fallbackReason='webgl2-unavailable';}
+    updateCupFallback();
+  }).catch(error=>{
+    cupContainer.dataset.renderer='pre-rendered';cupContainer.dataset.fallbackReason='renderer-load-failed';
+    console.warn('BRWW: using the pre-rendered cup animation.',error);updateCupFallback();
+  });
+}
+const cupLoader=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))loadCup();},{rootMargin:'600px'});cupLoader.observe(about);
+const cupVisibility=new IntersectionObserver(entries=>{cupVisible=entries[0].isIntersecting;updateCupFallback();},{rootMargin:'80px'});cupVisibility.observe(cupContainer);
+cupContainer.addEventListener('cup-renderer-change',updateCupFallback);
+document.addEventListener('visibilitychange',updateCupFallback);
 function drawScroll(){
   ticking=false;const scale=parseFloat(getComputedStyle(document.documentElement).fontSize);
-  const r=about.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight*.62-r.top)/(r.height*.8)));
-  if(!cupModel&&lastFrame!==12){cup.src='assets/cup-turn/12.webp';lastFrame=12;}
-  if(!reduceMotion.matches){marquee.style.transform=`translateX(${-157*scale-Math.min(scrollY,1300)*.11}px)`;}
+  for(const el of benefits){
+    const r=el.getBoundingClientRect();
+    if(reduceMotion.matches||r.top<innerHeight*.84)el.classList.add('revealed');
+    else if(r.top>innerHeight*1.04)el.classList.remove('revealed');
+  }
+  if(!reduceMotion.matches)marquee.style.transform=`translateX(${-157*scale-Math.min(scrollY,1300)*.11}px)`;
 }
 function queueScroll(){if(!ticking){ticking=true;requestAnimationFrame(drawScroll);}}
-addEventListener('scroll',queueScroll,{passive:true});addEventListener('resize',queueScroll);reduceMotion.addEventListener('change',()=>{preloadFrames();queueScroll();});
+addEventListener('scroll',queueScroll,{passive:true});addEventListener('resize',queueScroll);
+reduceMotion.addEventListener('change',()=>{updateCupFallback();queueScroll();});
 updateBag();drawScroll();

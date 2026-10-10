@@ -1,10 +1,15 @@
 {
-  "name": "brww-coffee",
+  "name": "brww-coffee-in-motion",
+  "description": "A cinematic coffee experience with tactile artwork, an editable 3D cup and carefully paced motion.",
   "version": "1.0.0",
   "private": true,
   "type": "module",
   "scripts": {
     "dev": "node tools/server.mjs",
-    "check": "node --check dist/app.js && node --check dist/store.js && node --test tests/store.test.mjs"
-  }
+    "check": "node --check dist/app.js && node --check dist/store.js && node --check dist/hero-depth.js && node --check dist/cup-model.js && node --check dist/cup-scene.js && node --check dist/beans.js && node --test tests/store.test.mjs"
+  },
+  "engines": { "node": ">=20" },
+  "author": "Sajjad Dehghan",
+  "repository": { "type": "git", "url": "https://github.com/sajjad-dehghan/brww-coffee-in-motion.git" },
+  "homepage": "https://sajjad-dehghan.github.io/brww-coffee-in-motion/"
 }

@@ -1,5 +1,8 @@
-BRWW COFFEE
-===========
+BRWW - COFFEE IN MOTION
+======================
+
+See README.md for the portfolio overview and current public demo.
+This file preserves the detailed implementation and artwork notes.
 
 Interactive reconstruction of the public Scrolltide Coffee desktop recording.
 Reference: https://www.scrolltide.co/templates/coffee
@@ -50,7 +53,7 @@ The V2 central cup is an editable real-time Three.js model with seven parts,
 AI-created paper and kraft textures, molded lid geometry, physical materials
 and warm studio lights. Automatic eased turning is independent of scrolling.
 Animation pauses when the cup is off-screen or the page is hidden. Reduced
-motion shows a static front pose. A recorded still is the WebGL fallback.
+motion shows a static front pose. Video and animated WebP renders of the same model are the WebGL fallbacks.
 The original extraction assets are retained separately for historical review.
 
 Cart and preferences are browser-local. No real account service, payment or order
@@ -69,9 +72,10 @@ Run these tools in order:
 
 PREVIEW AND PUBLICATION
 -----------------------
-The private Site address is:
-https://brww-coffee-studio.finati001.chatgpt.site
-Consult verification/deployment.json for the actual deployment outcome.
+Public repository: https://github.com/sajjad-dehghan/brww-coffee-in-motion
+Public demo: https://sajjad-dehghan.github.io/brww-coffee-in-motion/
+The earlier private Sites registration was not successfully deployed.
+.openai/hosting.json retains that existing registration for local history.
 
 DISCOVERY MOTION
 ----------------
@@ -81,3 +85,33 @@ yields a 3.495s sine period and a 7.161px amplitude at 960px. The implementation
 uses a 3.5s loop with a 7.2rem amplitude and smooth sinusoidal easing.
 It pauses off-screen and in hidden pages; reduced motion disables it.
 See verification/discovery-motion-verification.json and the browser GIF.
+
+ABOUT SCROLL AND BROWSER COMPATIBILITY (V4)
+------------------------------------------
+Each feature row enters from its outside edge with a 0.5s fade and horizontal
+translation, triggered near 84% of viewport height. Normal document scrolling
+continues; the cup's automatic pose is independent of scrolling.
+The silent small still-image fallback is replaced by renders of the same model:
+680x960 H.264 video at 30fps, 14 seconds; a transparent animated WebP is the
+secondary path when video playback is unavailable. Reduced motion uses a crisp
+680x960 poster. Both animation paths pause off-screen/in hidden tabs.
+WebGL uses at least 1.5x rendering resolution and requests the performance GPU.
+Preview: http://127.0.0.1:5188/#about
+Force pre-rendered path: http://127.0.0.1:5188/?cup-renderer=image#about
+Force WebP path: http://127.0.0.1:5188/?cup-renderer=webp#about
+Native Firefox was not connected; compatibility paths were verified in IAB.
+See verification/about-and-firefox-verification.json and about-scroll-preview.gif.
+Render source: artwork/v3/render-recipe.json and cup-export.html. To regenerate,
+copy cup-export.html into dist temporarily, run the local server, open that page,
+press Export, and download the ZIP through the UI. Remove the temporary page
+from dist when finished. Raw 420 PNG frames are preserved locally under
+artwork/v3/cup-frames but excluded from delivery archives and Git.
+
+HERO POINTER DEPTH (V5)
+-----------------------
+The transparent hero artwork uses alpha-shaped shadows and a small pointer-driven
+perspective lift. Only opaque cup/splash pixels trigger it; text, navigation and
+transparent artwork margins do not. Pointer movement is coalesced with RAF; CSS
+smooths following and return. Touch and reduced motion remain still. Scrolling,
+window resize and tab hiding reset the effect. No WebGL is required for this effect.
+See verification/hero-depth-verification.json and hero-depth-preview.gif.

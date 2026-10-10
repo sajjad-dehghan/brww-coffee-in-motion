@@ -1,10 +1,10 @@
 {
-  "revision": "v3-discovery-motion",
+  "revision": "v5-hero-pointer-depth",
   "files": [
     {
       "path": "dist/app.js",
-      "bytes": 12189,
-      "sha256": "31ee92e794db1d9b4276cd1ac72029719731e1d84561962c9936aa13b1c02872"
+      "bytes": 15210,
+      "sha256": "c4ca9613e6572bb27aa49ee2535bd97a99cb48d920372a5ea909f87782f89722"
     },
     {
       "path": "dist/assets/airborne-00.webp",
@@ -105,6 +105,21 @@
       "path": "dist/assets/cappuccino.webp",
       "bytes": 13668,
       "sha256": "362c15c7bf360ffda82f3d595ca17043f4aaaf7d0c050e5babf4763f80dbc586"
+    },
+    {
+      "path": "dist/assets/cup-animation-v3.mp4",
+      "bytes": 6903547,
+      "sha256": "7d638157134137e6d811886a2a17def2e396f9ab066cdeb3a60606582be32688"
+    },
+    {
+      "path": "dist/assets/cup-animation-v3.webp",
+      "bytes": 38593776,
+      "sha256": "6fba8c5553f8018b156a2e1a018a6cb5336836650707e2a9f4ce13709a337cdd"
+    },
+    {
+      "path": "dist/assets/cup-poster-v3.webp",
+      "bytes": 131860,
+      "sha256": "8403cf4d7c25a965cf26588488b292c17e38984e5a72d17c21bc01e6229113d0"
     },
     {
       "path": "dist/assets/cup-turn/00.webp",
@@ -313,13 +328,18 @@
     },
     {
       "path": "dist/cup-scene.js",
-      "bytes": 5360,
-      "sha256": "3c01c5f62fa44b07a19a415ea4dac1570bdc4611db93aa42b2af3d025fa0b3cf"
+      "bytes": 6297,
+      "sha256": "876eed68614c5039a82d577cabc0fe1b553402fe20188ccb1452012dad2da770"
+    },
+    {
+      "path": "dist/hero-depth.js",
+      "bytes": 3449,
+      "sha256": "b14e0f4f7bd8279f60f22f867ea890e5dadee078446653d58673c77c2d642050"
     },
     {
       "path": "dist/index.html",
-      "bytes": 8841,
-      "sha256": "fdd441edcdfea31af9203edd535210dfe4b59eb53e0db4402b6bdca43f699920"
+      "bytes": 8926,
+      "sha256": "ce321abf86929f0a3c2e0cbaec55d5bc7e565cab80c0d5941abec20a62ede979"
     },
     {
       "path": "dist/store.js",
@@ -328,8 +348,8 @@
     },
     {
       "path": "dist/styles.css",
-      "bytes": 20220,
-      "sha256": "cc878227e9df495e42b0b4b69b57dbdb9928000314d729f9ac0e16256af156ca"
+      "bytes": 22254,
+      "sha256": "87a58dd603c869e82fcea1a35d10324c5a7067f301c839828c3df8326527d3dc"
     },
     {
       "path": "dist/vendor/THREE-LICENSE.txt",
@@ -346,5 +366,19 @@
       "bytes": 603113,
       "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
     }
-  ]
+  ],
+  "cup_render": {
+    "size": [
+      680,
+      960
+    ],
+    "fps": 30,
+    "period_seconds": 14,
+    "stationary_scroll_positions": [
+      1135.199951171875
+    ],
+    "start_time": 7.845496,
+    "end_time": 9.501775,
+    "playing": true
+  }
 }
