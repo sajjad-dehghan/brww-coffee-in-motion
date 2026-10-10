@@ -1,5 +1,5 @@
-import {products, sanitiseCart, updateQuantity, cartCount, cartTotal, recommend} from './store.js';
-import {t, number, price, localizedProduct, toggleLanguage} from './i18n.js';
+import {products, sanitiseCart, updateQuantity, cartCount, cartTotal, recommend} from './store.js?v=6';
+import {t, number, price, localizedProduct, toggleLanguage} from './i18n.js?v=6';
 import {mountHeroDepth} from './hero-depth.js';
 
 const q = selector => document.querySelector(selector);

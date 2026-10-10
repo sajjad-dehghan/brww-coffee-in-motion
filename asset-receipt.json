@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "dist/app.js",
-      "bytes": 16175,
-      "sha256": "68237085f6d1edc6930edebb17c2fc7a7e53c2ea20c5acc9573eff3560809c70"
+      "bytes": 16183,
+      "sha256": "703284c5061d0f25f507e0ac294312ca0b4f1a30d8af9ff7b1b7bfb0493a5c1b"
     },
     {
       "path": "dist/assets/INTER-OFL.txt",
@@ -363,13 +363,13 @@
     },
     {
       "path": "dist/i18n.js",
-      "bytes": 2495,
-      "sha256": "bc0ae46aacebb1135d586de8aefb080b8dc13c50bf3c7fd55dd0ebb353cf4a91"
+      "bytes": 2503,
+      "sha256": "e6d9552977a4ade2edfa7e8f2fce7eb2c12123c9583ea08a6f679840d9c8bccc"
     },
     {
       "path": "dist/index.html",
-      "bytes": 12036,
-      "sha256": "c992046502b581167441257dfde44e28b2d59a42cca752fa11e78a28a7c81514"
+      "bytes": 12042,
+      "sha256": "658d867b4596c870226ddcdc811c1217d000221c6c35c8123592bdb994c56379"
     },
     {
       "path": "dist/locales.js",

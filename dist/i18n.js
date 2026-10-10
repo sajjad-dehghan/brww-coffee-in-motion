@@ -1,5 +1,5 @@
-import {resolveLanguage, translate, formatNumber} from './locales.js';
-import {products, money} from './store.js';
+import {resolveLanguage, translate, formatNumber} from './locales.js?v=6';
+import {products, money} from './store.js?v=6';
 
 let stored;
 try { stored = localStorage.getItem('brww-language'); } catch { /* Storage is optional. */ }
