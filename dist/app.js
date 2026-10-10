@@ -68,6 +68,12 @@ q('.mobile-toggle').addEventListener('click',()=>{const open=document.body.class
 document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.body.classList.remove('nav-open');q('.mobile-toggle').setAttribute('aria-expanded','false');q('.mobile-toggle').setAttribute('aria-label','Open navigation');}});
 
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
+const discoveryArt=q('.discovery-art');
+let discoveryVisible=false;
+function updateDiscoveryMotion(){discoveryArt.classList.toggle('motion-running',discoveryVisible&&!document.hidden);}
+const discoveryObserver=new IntersectionObserver(entries=>{discoveryVisible=entries[0].isIntersecting;updateDiscoveryMotion();},{rootMargin:'50px'});
+discoveryObserver.observe(discoveryArt);
+document.addEventListener('visibilitychange',updateDiscoveryMotion);
 const cup=q('#turning-cup'),about=q('.about'),marquee=q('.marquee span');
 let lastFrame=-1,ticking=false,framesReady=false,cupModel=null;
 const frameImages=[];
@@ -77,7 +83,7 @@ function drawScroll(){
   ticking=false;const scale=parseFloat(getComputedStyle(document.documentElement).fontSize);
   const r=about.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight*.62-r.top)/(r.height*.8)));
   if(!cupModel&&lastFrame!==12){cup.src='assets/cup-turn/12.webp';lastFrame=12;}
-  if(!reduceMotion.matches){marquee.style.transform=`translateX(${-157*scale-Math.min(scrollY,1300)*.11}px)`;const drift=Math.max(-9,Math.min(9,(q('.discovery').getBoundingClientRect().top-innerHeight*.5)*.025));q('.bean-scene').style.setProperty('--drift',`${drift}px`);}
+  if(!reduceMotion.matches){marquee.style.transform=`translateX(${-157*scale-Math.min(scrollY,1300)*.11}px)`;}
 }
 function queueScroll(){if(!ticking){ticking=true;requestAnimationFrame(drawScroll);}}
 addEventListener('scroll',queueScroll,{passive:true});addEventListener('resize',queueScroll);reduceMotion.addEventListener('change',()=>{preloadFrames();queueScroll();});

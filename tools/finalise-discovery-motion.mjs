@@ -1,0 +1,20 @@
+import {readFile,writeFile,readdir} from 'node:fs/promises';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+const root=path.resolve(import.meta.dirname,'..');
+const recordPath=path.join(root,'verification/discovery-motion-verification.json');
+const record=JSON.parse(await readFile(recordPath,'utf8'));
+record.browser_mobile={width:390,height:844,animation_running:true,horizontal_overflow:false,quiz_trigger_and_close:'passed'};
+record.offscreen_animation_state='paused';record.browser_errors=[];
+record.reduced_motion='CSS media rule disables animation; system preference emulation not performed';
+await writeFile(recordPath,JSON.stringify(record,null,2)+'\n');
+const mainPath=path.join(root,'verification/verification.json');
+const main=JSON.parse(await readFile(mainPath,'utf8'));main.discovery_motion=record;
+await writeFile(mainPath,JSON.stringify(main,null,2)+'\n');
+const readmePath=path.join(root,'README.txt');let readme=await readFile(readmePath,'utf8');
+if(!readme.includes('DISCOVERY MOTION'))readme+='\nDISCOVERY MOTION\n----------------\nThe original preview has a shared vertical float for the spoon and beans,\nindependent of scrolling. Measurement of its stationary 8.9-11.8s segment\nyields a 3.495s sine period and a 7.161px amplitude at 960px. The implementation\nuses a 3.5s loop with a 7.2rem amplitude and smooth sinusoidal easing.\nIt pauses off-screen and in hidden pages; reduced motion disables it.\nSee verification/discovery-motion-verification.json and the browser GIF.\n';
+await writeFile(readmePath,readme);
+const receipt=[];async function walk(dir){for(const item of await readdir(dir,{withFileTypes:true})){const file=path.join(dir,item.name);if(item.isDirectory())await walk(file);else{const data=await readFile(file);receipt.push({path:path.relative(root,file).replaceAll('\\','/'),bytes:data.length,sha256:createHash('sha256').update(data).digest('hex')});}}}
+await walk(path.join(root,'dist'));
+await writeFile(path.join(root,'asset-receipt.json'),JSON.stringify({revision:'v3-discovery-motion',files:receipt},null,2)+'\n');
+console.log('Saved motion verification and current asset hashes.');

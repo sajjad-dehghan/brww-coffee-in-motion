@@ -1,0 +1,470 @@
+[
+  {
+    "time": 1791644644962,
+    "artTop": 198.80404663085935,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -3.79596px"
+  },
+  {
+    "time": 1791644645136,
+    "artTop": 200.0107879638672,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -2.58922px"
+  },
+  {
+    "time": 1791644645214,
+    "artTop": 200.96060180664065,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -1.6394px"
+  },
+  {
+    "time": 1791644645313,
+    "artTop": 202.30783081054688,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -0.292174px"
+  },
+  {
+    "time": 1791644645437,
+    "artTop": 203.8424530029297,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 1.24244px"
+  },
+  {
+    "time": 1791644645518,
+    "artTop": 204.80906677246097,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 2.20905px"
+  },
+  {
+    "time": 1791644645580,
+    "artTop": 205.57041931152344,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 2.97039px"
+  },
+  {
+    "time": 1791644645668,
+    "artTop": 206.59292602539065,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 3.99293px"
+  },
+  {
+    "time": 1791644645744,
+    "artTop": 207.375244140625,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 4.77525px"
+  },
+  {
+    "time": 1791644645825,
+    "artTop": 208.06748962402344,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 5.46749px"
+  },
+  {
+    "time": 1791644645903,
+    "artTop": 208.7029266357422,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 6.10293px"
+  },
+  {
+    "time": 1791644646007,
+    "artTop": 209.3358459472656,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 6.73586px"
+  },
+  {
+    "time": 1791644646110,
+    "artTop": 209.6888732910156,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 7.08887px"
+  },
+  {
+    "time": 1791644646211,
+    "artTop": 209.7999725341797,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 7.19998px"
+  },
+  {
+    "time": 1791644646303,
+    "artTop": 209.7102813720703,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 7.11028px"
+  },
+  {
+    "time": 1791644646390,
+    "artTop": 209.49072265625,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 6.89071px"
+  },
+  {
+    "time": 1791644646470,
+    "artTop": 209.06748962402344,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 6.46747px"
+  },
+  {
+    "time": 1791644646561,
+    "artTop": 208.4765167236328,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 5.87653px"
+  },
+  {
+    "time": 1791644646675,
+    "artTop": 207.5389404296875,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 4.93894px"
+  },
+  {
+    "time": 1791644646763,
+    "artTop": 206.6247406005859,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 4.02473px"
+  },
+  {
+    "time": 1791644646883,
+    "artTop": 205.2716522216797,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 2.67165px"
+  },
+  {
+    "time": 1791644646978,
+    "artTop": 204.0584716796875,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 1.45847px"
+  },
+  {
+    "time": 1791644647094,
+    "artTop": 202.5317840576172,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -0.0682308px"
+  },
+  {
+    "time": 1791644647204,
+    "artTop": 201.09239196777344,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -1.5076px"
+  },
+  {
+    "time": 1791644647297,
+    "artTop": 200.04913330078125,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -2.55087px"
+  },
+  {
+    "time": 1791644647375,
+    "artTop": 199.0661468505859,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -3.53385px"
+  },
+  {
+    "time": 1791644647470,
+    "artTop": 198.02947998046875,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -4.57052px"
+  },
+  {
+    "time": 1791644647585,
+    "artTop": 197.0176239013672,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -5.58239px"
+  },
+  {
+    "time": 1791644647670,
+    "artTop": 196.40415954589844,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -6.19585px"
+  },
+  {
+    "time": 1791644647746,
+    "artTop": 195.9296417236328,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -6.67036px"
+  },
+  {
+    "time": 1791644647842,
+    "artTop": 195.56234741210935,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -7.03765px"
+  },
+  {
+    "time": 1791644647944,
+    "artTop": 195.4056854248047,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -7.19432px"
+  },
+  {
+    "time": 1791644648035,
+    "artTop": 195.4638671875,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -7.13613px"
+  },
+  {
+    "time": 1791644648139,
+    "artTop": 195.76304626464844,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -6.83695px"
+  },
+  {
+    "time": 1791644648228,
+    "artTop": 196.17079162597656,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -6.42921px"
+  },
+  {
+    "time": 1791644648312,
+    "artTop": 196.72422790527344,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -5.87578px"
+  },
+  {
+    "time": 1791644648414,
+    "artTop": 197.5956268310547,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -5.00438px"
+  },
+  {
+    "time": 1791644648496,
+    "artTop": 198.35452270507812,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -4.24548px"
+  },
+  {
+    "time": 1791644648578,
+    "artTop": 199.27235412597656,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -3.32765px"
+  },
+  {
+    "time": 1791644648666,
+    "artTop": 200.35435485839844,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -2.24564px"
+  },
+  {
+    "time": 1791644648782,
+    "artTop": 201.94949340820312,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px -0.650514px"
+  },
+  {
+    "time": 1791644648891,
+    "artTop": 203.3018493652344,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 0.701842px"
+  },
+  {
+    "time": 1791644648986,
+    "artTop": 204.4626922607422,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 1.86268px"
+  },
+  {
+    "time": 1791644649069,
+    "artTop": 205.48838806152344,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 2.88837px"
+  },
+  {
+    "time": 1791644649166,
+    "artTop": 206.74168395996097,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 4.14167px"
+  },
+  {
+    "time": 1791644649257,
+    "artTop": 207.442626953125,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 4.84262px"
+  },
+  {
+    "time": 1791644649344,
+    "artTop": 208.3477325439453,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 5.74773px"
+  },
+  {
+    "time": 1791644649445,
+    "artTop": 209.0102996826172,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 6.41031px"
+  },
+  {
+    "time": 1791644649543,
+    "artTop": 209.45263671875,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 6.85265px"
+  },
+  {
+    "time": 1791644649633,
+    "artTop": 209.67239379882812,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 7.07238px"
+  },
+  {
+    "time": 1791644649729,
+    "artTop": 209.795654296875,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 7.19564px"
+  },
+  {
+    "time": 1791644649819,
+    "artTop": 209.6956024169922,
+    "cardTop": 337.6000061035156,
+    "duration": "3.5s",
+    "scrollY": 1662.4000244140625,
+    "state": "running",
+    "translate": "0px 7.09561px"
+  }
+]

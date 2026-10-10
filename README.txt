@@ -72,3 +72,12 @@ PREVIEW AND PUBLICATION
 The private Site address is:
 https://brww-coffee-studio.finati001.chatgpt.site
 Consult verification/deployment.json for the actual deployment outcome.
+
+DISCOVERY MOTION
+----------------
+The original preview has a shared vertical float for the spoon and beans,
+independent of scrolling. Measurement of its stationary 8.9-11.8s segment
+yields a 3.495s sine period and a 7.161px amplitude at 960px. The implementation
+uses a 3.5s loop with a 7.2rem amplitude and smooth sinusoidal easing.
+It pauses off-screen and in hidden pages; reduced motion disables it.
+See verification/discovery-motion-verification.json and the browser GIF.

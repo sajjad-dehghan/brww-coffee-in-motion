@@ -25,7 +25,11 @@ main{overflow-x:clip}
 .hero-description{width:350rem}.hero-description .desktop-break{display:none}
 .cup-canvas{position:absolute;inset:0;display:block;width:100%;height:100%;filter:drop-shadow(0 18rem 16rem #0004)}
 .webgl-ready #turning-cup{visibility:hidden}
-.bean-scene .discovery-art{left:446rem;top:-135rem;width:460rem;height:307rem;object-fit:contain;translate:0 var(--drift,0px);filter:drop-shadow(0 12rem 10rem #0003)}
+.bean-scene .discovery-art{left:446rem;top:-135rem;width:460rem;height:307rem;object-fit:contain;translate:0 0;filter:drop-shadow(0 12rem 10rem #0003);animation:discovery-float 3.5s cubic-bezier(.37,0,.63,1) infinite;animation-play-state:paused}
+.bean-scene .discovery-art.motion-running{animation-play-state:running;will-change:translate}
+/* Motion measured from the reference's stationary 8.9–11.8 second segment:
+   all beans and the spoon translate together, about ±7.2px at 960px, 3.5s loop. */
+@keyframes discovery-float{0%,100%{translate:0 -7.2rem}50%{translate:0 7.2rem}}
 @media(max-width:680px){.hero{height:910px}.hero-description{width:min(360px,100%)}.hero-art{left:calc(50% - 220px);top:445px;width:450px;height:450px;mask-image:none}.bean-scene .discovery-art{left:-36px;top:-75px;width:460px;height:307px}.cup-canvas{height:100%}.discovery,.discovery-card{height:320px}.discovery{margin-top:90px}}
 @media(max-width:359px){.hero{height:900px}.hero-art{left:calc(50% - 205px);top:470px;width:410px;height:410px}}
 

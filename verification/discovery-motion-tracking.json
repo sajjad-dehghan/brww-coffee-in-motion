@@ -1,0 +1,247 @@
+[
+  {
+    "time": 9,
+    "objects": {
+      "left-bean": {
+        "dx": 0,
+        "dy": -3,
+        "mean_pixel_error": 3.535
+      },
+      "top-bean": {
+        "dx": 0,
+        "dy": -3,
+        "mean_pixel_error": 1.503
+      },
+      "middle-bean": {
+        "dx": 0,
+        "dy": -3,
+        "mean_pixel_error": 3.0
+      },
+      "lower-bean": {
+        "dx": 0,
+        "dy": -3,
+        "mean_pixel_error": 3.989
+      },
+      "spoon-bowl": {
+        "dx": 0,
+        "dy": -3,
+        "mean_pixel_error": 5.488
+      },
+      "static-card": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.008
+      }
+    }
+  },
+  {
+    "time": 9.5,
+    "objects": {
+      "left-bean": {
+        "dx": 0,
+        "dy": -7,
+        "mean_pixel_error": 2.641
+      },
+      "top-bean": {
+        "dx": 0,
+        "dy": -7,
+        "mean_pixel_error": 1.12
+      },
+      "middle-bean": {
+        "dx": 0,
+        "dy": -7,
+        "mean_pixel_error": 2.604
+      },
+      "lower-bean": {
+        "dx": 0,
+        "dy": -7,
+        "mean_pixel_error": 1.842
+      },
+      "spoon-bowl": {
+        "dx": 0,
+        "dy": -7,
+        "mean_pixel_error": 3.477
+      },
+      "static-card": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.006
+      }
+    }
+  },
+  {
+    "time": 10,
+    "objects": {
+      "left-bean": {
+        "dx": 0,
+        "dy": -6,
+        "mean_pixel_error": 3.562
+      },
+      "top-bean": {
+        "dx": 0,
+        "dy": -6,
+        "mean_pixel_error": 1.502
+      },
+      "middle-bean": {
+        "dx": 0,
+        "dy": -6,
+        "mean_pixel_error": 3.446
+      },
+      "lower-bean": {
+        "dx": 0,
+        "dy": -6,
+        "mean_pixel_error": 2.701
+      },
+      "spoon-bowl": {
+        "dx": 0,
+        "dy": -6,
+        "mean_pixel_error": 5.288
+      },
+      "static-card": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.0
+      }
+    }
+  },
+  {
+    "time": 10.5,
+    "objects": {
+      "left-bean": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.0
+      },
+      "top-bean": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.0
+      },
+      "middle-bean": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.0
+      },
+      "lower-bean": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.0
+      },
+      "spoon-bowl": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.0
+      },
+      "static-card": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.0
+      }
+    }
+  },
+  {
+    "time": 11,
+    "objects": {
+      "left-bean": {
+        "dx": 0,
+        "dy": 6,
+        "mean_pixel_error": 4.437
+      },
+      "top-bean": {
+        "dx": 0,
+        "dy": 6,
+        "mean_pixel_error": 2.022
+      },
+      "middle-bean": {
+        "dx": 0,
+        "dy": 6,
+        "mean_pixel_error": 4.034
+      },
+      "lower-bean": {
+        "dx": 0,
+        "dy": 6,
+        "mean_pixel_error": 3.936
+      },
+      "spoon-bowl": {
+        "dx": 0,
+        "dy": 6,
+        "mean_pixel_error": 7.054
+      },
+      "static-card": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.0
+      }
+    }
+  },
+  {
+    "time": 11.5,
+    "objects": {
+      "left-bean": {
+        "dx": 0,
+        "dy": 7,
+        "mean_pixel_error": 3.246
+      },
+      "top-bean": {
+        "dx": 0,
+        "dy": 7,
+        "mean_pixel_error": 1.276
+      },
+      "middle-bean": {
+        "dx": 0,
+        "dy": 7,
+        "mean_pixel_error": 2.556
+      },
+      "lower-bean": {
+        "dx": 0,
+        "dy": 7,
+        "mean_pixel_error": 2.77
+      },
+      "spoon-bowl": {
+        "dx": 0,
+        "dy": 7,
+        "mean_pixel_error": 5.473
+      },
+      "static-card": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.001
+      }
+    }
+  },
+  {
+    "time": 11.8,
+    "objects": {
+      "left-bean": {
+        "dx": 0,
+        "dy": 5,
+        "mean_pixel_error": 2.071
+      },
+      "top-bean": {
+        "dx": 0,
+        "dy": 5,
+        "mean_pixel_error": 1.023
+      },
+      "middle-bean": {
+        "dx": 0,
+        "dy": 5,
+        "mean_pixel_error": 1.925
+      },
+      "lower-bean": {
+        "dx": 0,
+        "dy": 5,
+        "mean_pixel_error": 1.407
+      },
+      "spoon-bowl": {
+        "dx": 0,
+        "dy": 5,
+        "mean_pixel_error": 3.831
+      },
+      "static-card": {
+        "dx": 0,
+        "dy": 0,
+        "mean_pixel_error": 0.001
+      }
+    }
+  }
+]

@@ -1,10 +1,10 @@
 {
-  "revision": "v2",
+  "revision": "v3-discovery-motion",
   "files": [
     {
       "path": "dist/app.js",
-      "bytes": 11905,
-      "sha256": "29b500fe637f855bff92dfbbdef9ff03b1bf80973a121c0570c175005a14cf61"
+      "bytes": 12189,
+      "sha256": "31ee92e794db1d9b4276cd1ac72029719731e1d84561962c9936aa13b1c02872"
     },
     {
       "path": "dist/assets/airborne-00.webp",
@@ -328,8 +328,8 @@
     },
     {
       "path": "dist/styles.css",
-      "bytes": 19804,
-      "sha256": "c27e561d18941aa6d623d18caf6157f37a5d04116e02106f3576e753a3f4e42f"
+      "bytes": 20220,
+      "sha256": "cc878227e9df495e42b0b4b69b57dbdb9928000314d729f9ac0e16256af156ca"
     },
     {
       "path": "dist/vendor/THREE-LICENSE.txt",

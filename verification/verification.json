@@ -83,5 +83,46 @@
     "browser_errors": [],
     "fallback": "Static image when WebGL is unavailable",
     "reduced_motion": "Implemented; OS-level emulation not performed"
+  },
+  "discovery_motion": {
+    "reference": "../analysis/scrolltide-coffee-2026-10-10/coffee.webm",
+    "source_segment_seconds": [
+      8.9,
+      11.8
+    ],
+    "observed_motion": "Spoon and all floating beans translate vertically in phase; card and text stay fixed.",
+    "reference_fit": {
+      "period_seconds": 3.495,
+      "amplitude_px_at_960": 7.161,
+      "rms_error_px": 0.127
+    },
+    "implementation": {
+      "period_seconds": 3.5,
+      "amplitude_rem": 7.2,
+      "easing": "cubic-bezier(.37,0,.63,1)",
+      "scroll_control": false
+    },
+    "browser_desktop": {
+      "width": 960,
+      "height": 572,
+      "scroll_positions": [
+        1662.4000244140625
+      ],
+      "card_top_positions": [
+        337.6000061035156
+      ],
+      "observed_travel_px": 14.394
+    },
+    "preview": "discovery-motion-preview.gif",
+    "browser_mobile": {
+      "width": 390,
+      "height": 844,
+      "animation_running": true,
+      "horizontal_overflow": false,
+      "quiz_trigger_and_close": "passed"
+    },
+    "offscreen_animation_state": "paused",
+    "browser_errors": [],
+    "reduced_motion": "CSS media rule disables animation; system preference emulation not performed"
   }
 }
