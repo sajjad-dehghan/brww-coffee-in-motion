@@ -1,9 +1,29 @@
 {
   "review_date": "2026-10-10",
   "reference": "https://www.scrolltide.co/templates/coffee",
-  "reference_viewport": {"width":960,"height":572},
+  "reference_viewport": {
+    "width": 960,
+    "height": 572
+  },
   "browser_checks": {
-    "viewports": [[320,760],[390,844],[960,572],[1440,900]],
+    "viewports": [
+      [
+        320,
+        760
+      ],
+      [
+        390,
+        844
+      ],
+      [
+        960,
+        572
+      ],
+      [
+        1440,
+        900
+      ]
+    ],
     "horizontal_overflow": false,
     "broken_images_observed": false,
     "cart_add": "passed",
@@ -23,12 +43,45 @@
     "untrusted_local_storage_sanitisation": "passed",
     "recommendations": "passed"
   },
-  "visual_result": "Reference-led reconstruction using original recorded artwork; not verified pixel-identical",
+  "visual_result": "V2 reconstructed high-resolution imagery and genuine real-time 3D cup; exact reference parity not verified",
   "limitations": [
     "Original implementation, Figma and high-resolution artwork unavailable",
     "No original mobile viewport available for parity comparison",
-    "Cup turn uses stabilised recorded frames with reconstructed off-screen ends",
     "No commerce backend, real account authentication or payment processing",
     "Full assistive-technology audit and runtime reduced-motion emulation not performed"
-  ]
+  ],
+  "artwork_v2": {
+    "generated_with": "Built-in ImageGen",
+    "images": [
+      "hero",
+      "cappuccino",
+      "latte",
+      "mocha",
+      "discovery"
+    ],
+    "materials": [
+      "paper",
+      "kraft sleeve"
+    ],
+    "model": "Seven-part editable Three.js geometry",
+    "animation": "Automatic eased loop, independent of scrolling",
+    "verified_desktop": [
+      1440,
+      900
+    ],
+    "verified_mobile": [
+      [
+        390,
+        844
+      ],
+      [
+        320,
+        760
+      ]
+    ],
+    "unchanged_scroll_y_between_different_poses": 1828.800048828125,
+    "browser_errors": [],
+    "fallback": "Static image when WebGL is unavailable",
+    "reduced_motion": "Implemented; OS-level emulation not performed"
+  }
 }

@@ -1,7 +1,7 @@
 export const products = Object.freeze([
-  { id: 'cappuccino', name: 'Cappuccino', cents: 450, rating: '4.9', note: 'Balanced espresso, steamed milk and airy foam.', image: 'assets/cappuccino.webp' },
-  { id: 'latte', name: 'Latte', cents: 500, rating: '5.0', note: 'Smooth espresso with fresh, creamy milk.', image: 'assets/latte.webp' },
-  { id: 'mocha', name: 'Mocha', cents: 500, rating: '4.7', note: 'Espresso, hot milk and premium chocolate.', image: 'assets/mocha.webp' }
+  { id: 'cappuccino', name: 'Cappuccino', cents: 450, rating: '4.9', note: 'Balanced espresso, steamed milk and airy foam.', image: 'assets/cappuccino-v2.webp' },
+  { id: 'latte', name: 'Latte', cents: 500, rating: '5.0', note: 'Smooth espresso with fresh, creamy milk.', image: 'assets/latte-v2.webp' },
+  { id: 'mocha', name: 'Mocha', cents: 500, rating: '4.7', note: 'Espresso, hot milk and premium chocolate.', image: 'assets/mocha-v2.webp' }
 ]);
 export const money = cents => new Intl.NumberFormat('en-US', {style:'currency',currency:'USD'}).format(cents/100);
 export function sanitiseCart(value) {

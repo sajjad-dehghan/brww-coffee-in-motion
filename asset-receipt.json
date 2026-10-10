@@ -1,10 +1,10 @@
 {
-  "reference": "https://www.scrolltide.co/templates/coffee",
+  "revision": "v2",
   "files": [
     {
       "path": "dist/app.js",
-      "bytes": 12261,
-      "sha256": "84146ed5cdedee2d0967905a9c0bb601a8ff8dfabb4c1e2405bb74834ac06589"
+      "bytes": 11905,
+      "sha256": "29b500fe637f855bff92dfbbdef9ff03b1bf80973a121c0570c175005a14cf61"
     },
     {
       "path": "dist/assets/airborne-00.webp",
@@ -95,6 +95,11 @@
       "path": "dist/assets/bean-6.webp",
       "bytes": 2950,
       "sha256": "865822b920d3f480546964e9deaa1c3f0d5866008d8c67ac5f66e2927e486bb3"
+    },
+    {
+      "path": "dist/assets/cappuccino-v2.webp",
+      "bytes": 417386,
+      "sha256": "21965c6baabc6672492922529728cbcdb57df1be5ab6bcb825b816571e854789"
     },
     {
       "path": "dist/assets/cappuccino.webp",
@@ -222,6 +227,11 @@
       "sha256": "3ef5ce96cfa3aa088a7cb63351cfb83ef1cf7ad790ff42272b423673c196274b"
     },
     {
+      "path": "dist/assets/discovery-v2.webp",
+      "bytes": 307454,
+      "sha256": "54a87df77937c161c8a3bfc50e3c157988e729316a093e7e4a8aea64d2f45f8d"
+    },
+    {
       "path": "dist/assets/favicon.svg",
       "bytes": 248,
       "sha256": "d223255b6cd63f7f9cf66fa7f2e5007bf2bdbf249411110958acb727debc8743"
@@ -230,6 +240,11 @@
       "path": "dist/assets/hero-art.webp",
       "bytes": 169556,
       "sha256": "c80447e0810a191e6cb367098c9b8d8f6b8709f813d4107bb6f48b172f3d30e3"
+    },
+    {
+      "path": "dist/assets/hero-v2.webp",
+      "bytes": 485024,
+      "sha256": "28fe3cc792bf25f1bb0107fedad13c0d4c0e3c75e0c57acc435fab0892aabca4"
     },
     {
       "path": "dist/assets/inter-latin.woff2",
@@ -242,14 +257,29 @@
       "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
     },
     {
+      "path": "dist/assets/latte-v2.webp",
+      "bytes": 277160,
+      "sha256": "67f5a70f1272c1a9c90f319e190e327a724bb11bbe00ef4e07f1836f5b2acad3"
+    },
+    {
       "path": "dist/assets/latte.webp",
       "bytes": 12122,
       "sha256": "d692c78e5ce59eea664e8407667c529bd84d8c000236815a9097a1aa82d3d88c"
     },
     {
+      "path": "dist/assets/mocha-v2.webp",
+      "bytes": 391150,
+      "sha256": "7f0ac6ffc2522a014d4e20d8c6452137b79eeb3c07a7484ee66a0133839a1a9f"
+    },
+    {
       "path": "dist/assets/mocha.webp",
       "bytes": 14444,
       "sha256": "626deb1772129aaa4ba6ee3e4f111daa26ee16a8808f082752cfc367504382b1"
+    },
+    {
+      "path": "dist/assets/paper-texture-v2.webp",
+      "bytes": 748104,
+      "sha256": "e799bceab4eee61cf05f3d257ffe9a3bc32418aace27be13cbd0318ddb1b28c7"
     },
     {
       "path": "dist/assets/playfair-latin.woff2",
@@ -262,6 +292,11 @@
       "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e"
     },
     {
+      "path": "dist/assets/sleeve-texture-v2.webp",
+      "bytes": 859494,
+      "sha256": "2b3e0c3fd9fabc617bbb7a91314d31b7a5d9e5d86e0530d8fe61e9fb39d482fa"
+    },
+    {
       "path": "dist/assets/spoon.webp",
       "bytes": 38588,
       "sha256": "0a383306f4567d972b48d8aa99d6cd5ac7238f75762479243c75cd9a3a24419d"
@@ -272,20 +307,44 @@
       "sha256": "563a6c513e1845d2710f3e604f265349e9b8a50526be5e3ff550806ff9cca3a4"
     },
     {
+      "path": "dist/cup-model.js",
+      "bytes": 2271,
+      "sha256": "ee209c15d4b69ff6267dbc10f7f3822f2cd0715dbb627a1e43bfff3a1708c42d"
+    },
+    {
+      "path": "dist/cup-scene.js",
+      "bytes": 5360,
+      "sha256": "3c01c5f62fa44b07a19a415ea4dac1570bdc4611db93aa42b2af3d025fa0b3cf"
+    },
+    {
       "path": "dist/index.html",
-      "bytes": 8834,
-      "sha256": "324857a6ae3e8085ba5903bac25490015c32a5690b623ced585c35f420f65258"
+      "bytes": 8841,
+      "sha256": "fdd441edcdfea31af9203edd535210dfe4b59eb53e0db4402b6bdca43f699920"
     },
     {
       "path": "dist/store.js",
-      "bytes": 1726,
-      "sha256": "722d7ddf1605976261f71203072e9be7e1c1afbf286ee10ebdc3d96aef5b7afb"
+      "bytes": 1735,
+      "sha256": "3b9a9d405df820be03993a9a3a56c36485899b93f79541150c59523d710a8cfe"
     },
     {
       "path": "dist/styles.css",
-      "bytes": 18851,
-      "sha256": "8c603ac121c6f78a63b008c70bb2919df2a747569137202d47d2350fc7520d6c"
+      "bytes": 19804,
+      "sha256": "c27e561d18941aa6d623d18caf6157f37a5d04116e02106f3576e753a3f4e42f"
+    },
+    {
+      "path": "dist/vendor/THREE-LICENSE.txt",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "dist/vendor/three.core.js",
+      "bytes": 1403455,
+      "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20"
+    },
+    {
+      "path": "dist/vendor/three.module.js",
+      "bytes": 603113,
+      "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a"
     }
-  ],
-  "turn_notes": "Recorded sleeve/light pixels; off-screen ends restored from complete recorded cup"
+  ]
 }

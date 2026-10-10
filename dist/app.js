@@ -1,8 +1,7 @@
 import {products,money,sanitiseCart,updateQuantity,cartCount,cartTotal,recommend} from './store.js';
-import {beans} from './beans.js';
 
 const q=s=>document.querySelector(s);
-q('.bean-scene').innerHTML=beans.map((bean,index)=>`<img class="bean airborne-bean" src="${bean.src}" alt="" width="${bean.width}" height="${bean.height}" style="--x:${bean.x}rem;--y:${bean.y}rem;--w:${bean.width}rem;--h:${bean.height}rem;--delay:${index*.16}s">`).join('')+'<img class="spoon" src="assets/spoon.webp" alt="" width="480" height="130">';
+q('.bean-scene').innerHTML='<img class="discovery-art" src="assets/discovery-v2.webp" alt="" width="1536" height="1024" loading="lazy">';
 const panel=q('#site-panel'),content=q('#panel-content');
 const safe=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const read=(key,fallback)=>{try{return JSON.parse(localStorage.getItem(key))??fallback;}catch{return fallback;}};
@@ -70,15 +69,14 @@ document.addEventListener('keydown',e=>{if(e.key==='Escape'){document.body.class
 
 const reduceMotion=matchMedia('(prefers-reduced-motion: reduce)');
 const cup=q('#turning-cup'),about=q('.about'),marquee=q('.marquee span');
-let lastFrame=-1,ticking=false,framesReady=false;
+let lastFrame=-1,ticking=false,framesReady=false,cupModel=null;
 const frameImages=[];
-function preloadFrames(){if(framesReady||reduceMotion.matches)return;framesReady=true;for(let i=0;i<24;i++){const image=new Image();image.src=`assets/cup-turn/${String(i).padStart(2,'0')}.webp`;frameImages.push(image);}}
+function preloadFrames(){if(framesReady)return;framesReady=true;import('./cup-scene.js').then(async({mountCup})=>{cupModel=await mountCup(q('.cup-scene'));queueScroll();}).catch(()=>{});}
 const observer=new IntersectionObserver(entries=>{if(entries.some(e=>e.isIntersecting))preloadFrames();},{rootMargin:'600px'});observer.observe(about);
 function drawScroll(){
   ticking=false;const scale=parseFloat(getComputedStyle(document.documentElement).fontSize);
   const r=about.getBoundingClientRect();const progress=Math.max(0,Math.min(1,(innerHeight*.62-r.top)/(r.height*.8)));
-  const frame=reduceMotion.matches?12:Math.round(progress*23);
-  if(frame!==lastFrame){cup.src=`assets/cup-turn/${String(frame).padStart(2,'0')}.webp`;lastFrame=frame;}
+  if(!cupModel&&lastFrame!==12){cup.src='assets/cup-turn/12.webp';lastFrame=12;}
   if(!reduceMotion.matches){marquee.style.transform=`translateX(${-157*scale-Math.min(scrollY,1300)*.11}px)`;const drift=Math.max(-9,Math.min(9,(q('.discovery').getBoundingClientRect().top-innerHeight*.5)*.025));q('.bean-scene').style.setProperty('--drift',`${drift}px`);}
 }
 function queueScroll(){if(!ticking){ticking=true;requestAnimationFrame(drawScroll);}}
