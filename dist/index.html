@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#1d120b">
+  <meta name="description" content="Discover BRWW: artisan coffee, a curated selection, and a little inspiration in every sip.">
+  <title>BRWW — Discover the Superior Taste Every Sip</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hero-art.webp" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#menu">Skip to coffee menu</a>
+  <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="user-icon" viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.3"/><path d="M5.5 20v-2.3a6.5 6.5 0 0 1 13 0V20"/></symbol>
+    <symbol id="cart-icon" viewBox="0 0 24 24"><path d="M2 3h3l2.3 12h12l2.2-8H6"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></symbol>
+    <symbol id="close-icon" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </defs></svg>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="BRWW home">BRWW</a>
+    <nav class="main-nav" aria-label="Main navigation">
+      <a href="#home" class="active" aria-current="page">Home</a>
+      <a href="#menu">Menu</a>
+      <a href="#about">About Us</a>
+      <button type="button" data-dialog="reviews">Reviews</button>
+      <a href="#discover">Promotions</a>
+    </nav>
+    <div class="header-actions">
+      <button class="round-button" aria-label="Coffee preferences" data-dialog="preferences"><svg><use href="#user-icon"/></svg></button>
+      <button class="round-button cart-toggle" aria-label="Open shopping bag, 0 items" data-dialog="cart"><svg><use href="#cart-icon"/></svg><span class="cart-count" hidden>0</span></button>
+      <button class="button order-button" data-order>Order Now</button>
+      <button class="mobile-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> Artisan Coffee Brewery · Est. 2010</p>
+        <h1 id="hero-title">Discover the<br><span>Superior</span> Taste<br>Every Sip!</h1>
+        <p class="hero-description">For us, coffee is not just a drink — it's an art. We invite<br class="desktop-break"> you on a unique culinary journey where every sip is a<br class="desktop-break"> meeting with the perfect taste.</p>
+        <a class="button explore-button" href="#menu">Explore Coffee</a>
+      </div>
+      <img class="hero-art" src="assets/hero-art.webp" width="552" height="540" alt="Two BRWW artisan coffee cups with a rich splash of coffee" fetchpriority="high">
+      <span class="cross hero-cross" aria-hidden="true"></span>
+    </section>
+    <section class="selection" id="menu" aria-label="Curated coffee selection">
+      <div class="marquee" aria-hidden="true"><span>CURATED COFFEE SELECTION · CURATED COFFEE SELECTION · </span></div>
+      <div class="product-grid">
+        <article class="product-card" data-product="cappuccino">
+          <img class="product-image" src="assets/cappuccino.webp" alt="Cappuccino in a speckled yellow BRWW cup" width="135" height="189">
+          <button class="rating" aria-label="Cappuccino rating, 4.9 out of 5" data-rating="cappuccino">4.9 <span>★</span></button>
+          <h2>Cappuccino</h2>
+          <p>A timeless classic: 20% espresso, 40% velvety steamed milk, and 40% airy milk foam. Balanced and smooth.</p>
+          <div class="product-purchase"><span class="price">$4.50</span><button class="add-button" data-add="cappuccino" aria-label="Add Cappuccino to your bag">+</button></div>
+        </article>
+        <article class="product-card" data-product="latte">
+          <img class="product-image" src="assets/latte.webp" alt="Latte in a mint-green BRWW cup" width="141" height="193">
+          <button class="rating" aria-label="Latte rating, 5.0 out of 5" data-rating="latte">5.0 <span>★</span></button>
+          <h2>Latte</h2>
+          <p>Smooth and creamy: 30% espresso and 70% fresh, hot milk. Perfect for a creamy coffee treat.</p>
+          <div class="product-purchase"><span class="price">$5.00</span><button class="add-button" data-add="latte" aria-label="Add Latte to your bag">+</button></div>
+        </article>
+        <article class="product-card" data-product="mocha">
+          <img class="product-image" src="assets/mocha.webp" alt="Mocha in a dark ribbed BRWW cup" width="142" height="197">
+          <button class="rating" aria-label="Mocha rating, 4.7 out of 5" data-rating="mocha">4.7 <span>★</span></button>
+          <h2>Mocha</h2>
+          <p>For the chocolate lover: 20% espresso, 50% hot milk, and 30% premium chocolate. Decadently sweet.</p>
+          <div class="product-purchase"><span class="price">$5.00</span><button class="add-button" data-add="mocha" aria-label="Add Mocha to your bag">+</button></div>
+        </article>
+      </div>
+      <button class="button outline-button full-menu" data-dialog="menu">Explore our full menu</button>
+      <span class="cross menu-cross" aria-hidden="true"></span>
+    </section>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <h2 class="about-title" id="about-title"><strong>BRWW</strong> IS</h2>
+      <div class="cup-scene" aria-hidden="true"><img id="turning-cup" src="assets/cup-turn/00.webp" width="340" height="480" alt=""></div>
+      <div class="benefits">
+        <article class="benefit benefit-one"><span class="benefit-number" aria-hidden="true">1</span><h3>Premium Bean Quality</h3><p>Our passion for coffee begins with selecting the finest beans. We pay attention to every detail so that each cup delivers exceptional quality and pleasure. We don't just pour coffee — we immerse you in a world of unforgettable flavours.</p></article>
+        <article class="benefit benefit-two"><span class="benefit-number" aria-hidden="true">2</span><h3>Atmosphere of<br>Inspiration</h3><p>Our cozy space is filled with warmth and comfort. Here, surrounded by attentive service, you can relax, enjoy a cup of coffee, and be inspired by pleasant conversation.</p></article>
+        <article class="benefit benefit-three"><span class="benefit-number" aria-hidden="true">3</span><h3>Personalised Approach<br>to Every Guest</h3><p>We craft coffee that reflects your preferences, creating unique drinks especially for you. With us it's not just coffee — it's a personalised experience, so every visit becomes a memorable occasion.</p></article>
+        <article class="benefit benefit-four"><span class="benefit-number" aria-hidden="true">4</span><h3>Professional Barista<br>Team</h3><p>Our baristas have extensive experience in brewing coffee and are ready to demonstrate all their exceptional talents in the art of coffee-making.</p></article>
+      </div>
+      <button class="button outline-button about-order" data-order>Order Now</button>
+    </section>
+    <section class="discovery" id="discover" aria-labelledby="discover-title">
+      <div class="discovery-card"><h2 id="discover-title">Find out which coffee suits you best</h2><button class="button outline-button test-button" data-dialog="quiz">Take the test</button></div>
+      <div class="bean-scene" aria-hidden="true">
+        <img class="bean bean-one" src="assets/bean-1.webp" width="424" height="281" alt="">
+        <img class="bean bean-two" src="assets/bean-2.webp" width="64" height="71" alt="">
+        <img class="bean bean-three" src="assets/bean-3.webp" width="74" height="83" alt="">
+        <img class="bean bean-four" src="assets/bean-4.webp" width="70" height="72" alt="">
+        <img class="bean bean-five" src="assets/bean-5.webp" width="73" height="64" alt="">
+        <img class="bean bean-six" src="assets/bean-6.webp" width="73" height="68" alt="">
+        <img class="spoon" src="assets/spoon.webp" width="424" height="170" alt="">
+      </div>
+      <span class="cross discovery-cross" aria-hidden="true"></span>
+    </section>
+  </main>
+  <footer class="site-footer"><button data-dialog="news">Coffee news</button><a href="https://telegram.org/" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></footer>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <dialog class="panel" id="site-panel" aria-labelledby="panel-title"><button class="panel-close round-button" aria-label="Close dialog"><svg><use href="#close-icon"/></svg></button><div id="panel-content"></div></dialog>
+</body>
+</html>

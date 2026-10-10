@@ -1,0 +1,34 @@
+{
+  "review_date": "2026-10-10",
+  "reference": "https://www.scrolltide.co/templates/coffee",
+  "reference_viewport": {"width":960,"height":572},
+  "browser_checks": {
+    "viewports": [[320,760],[390,844],[960,572],[1440,900]],
+    "horizontal_overflow": false,
+    "broken_images_observed": false,
+    "cart_add": "passed",
+    "cart_quantity_and_900_cent_total": "passed",
+    "cart_persistence_after_reload": "passed",
+    "cart_remove_and_empty_state": "passed",
+    "quiz_three_steps_and_mocha_recommendation": "passed",
+    "quiz_result_add_to_cart": "passed",
+    "mobile_navigation": "passed",
+    "native_dialog_focus": "passed",
+    "escape_closes_dialog_and_restores_focus": "passed",
+    "local_preferences_save_and_reopen": "passed",
+    "browser_error_and_warning_logs": []
+  },
+  "automated_checks": {
+    "cart_quantity_and_currency": "passed",
+    "untrusted_local_storage_sanitisation": "passed",
+    "recommendations": "passed"
+  },
+  "visual_result": "Reference-led reconstruction using original recorded artwork; not verified pixel-identical",
+  "limitations": [
+    "Original implementation, Figma and high-resolution artwork unavailable",
+    "No original mobile viewport available for parity comparison",
+    "Cup turn uses stabilised recorded frames with reconstructed off-screen ends",
+    "No commerce backend, real account authentication or payment processing",
+    "Full assistive-technology audit and runtime reduced-motion emulation not performed"
+  ]
+}

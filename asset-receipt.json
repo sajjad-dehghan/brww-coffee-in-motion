@@ -1,0 +1,291 @@
+{
+  "reference": "https://www.scrolltide.co/templates/coffee",
+  "files": [
+    {
+      "path": "dist/app.js",
+      "bytes": 12261,
+      "sha256": "84146ed5cdedee2d0967905a9c0bb601a8ff8dfabb4c1e2405bb74834ac06589"
+    },
+    {
+      "path": "dist/assets/airborne-00.webp",
+      "bytes": 2968,
+      "sha256": "a0f88c66e63c80b352a89dfd8b6ec7c474ec3adc66269c1383769c4595d35963"
+    },
+    {
+      "path": "dist/assets/airborne-01.webp",
+      "bytes": 3510,
+      "sha256": "9b6d948dea361702d73b81688bb5566d82d456c972d878b1858ec83621a82597"
+    },
+    {
+      "path": "dist/assets/airborne-02.webp",
+      "bytes": 2110,
+      "sha256": "dce2daf2c9fcdb8ed8ed0f6029970cc799e05b1cac753301800fbefad4ee044c"
+    },
+    {
+      "path": "dist/assets/airborne-03.webp",
+      "bytes": 2308,
+      "sha256": "573239a1ac0987c3adc86ce4cbe3ed06663471eebc42d0d73f4a294ebc81c5c7"
+    },
+    {
+      "path": "dist/assets/airborne-04.webp",
+      "bytes": 2300,
+      "sha256": "a3a64496f14e6ac4753550b8a5dbd00c01c0adc629a1c85e66b3ffeb1b7e4f89"
+    },
+    {
+      "path": "dist/assets/airborne-05.webp",
+      "bytes": 2946,
+      "sha256": "b66687d7ac8c9ba864c4c8454263dfb10aaca622b8bc774ace5901d4a9ea9eb8"
+    },
+    {
+      "path": "dist/assets/airborne-06.webp",
+      "bytes": 2150,
+      "sha256": "0c65b0eadbbfebcf52aa2582490c9cc809a032e8f7af00d14c303740d6f94cd6"
+    },
+    {
+      "path": "dist/assets/airborne-07.webp",
+      "bytes": 2466,
+      "sha256": "d0ecea36dea7bddf92505d1e02be82aeb270e6f46ddf94875bf8bd5fef7786d0"
+    },
+    {
+      "path": "dist/assets/airborne-08.webp",
+      "bytes": 2846,
+      "sha256": "a3de74545da56db6f42ccb6884cae3601a93e943a08d4b7673d6ecdf63114eda"
+    },
+    {
+      "path": "dist/assets/airborne-09.webp",
+      "bytes": 2770,
+      "sha256": "03f175012e06da12bb93ea6ea8e68c74ac26e372d29e422781521e97a0f9498a"
+    },
+    {
+      "path": "dist/assets/airborne-10.webp",
+      "bytes": 2848,
+      "sha256": "0429e8a03e4780ee0dd1db4331898d5e79a41982550e148402febe577d901141"
+    },
+    {
+      "path": "dist/assets/airborne-11.webp",
+      "bytes": 2612,
+      "sha256": "e17a6f0190bececea11b8436f67f9f1134e4bd3929dc6644054ecb7baf33d219"
+    },
+    {
+      "path": "dist/assets/bean-1.webp",
+      "bytes": 4278,
+      "sha256": "35ff4391a4aefec472ac373539f3436fe8a0d655a0887e3f009c0a21abbe93a6"
+    },
+    {
+      "path": "dist/assets/bean-2.webp",
+      "bytes": 1184,
+      "sha256": "e0bf968967fa0071fdc787ff5f2eaefea80d2fefd1b09ab9aa9a191165c90c22"
+    },
+    {
+      "path": "dist/assets/bean-3.webp",
+      "bytes": 1276,
+      "sha256": "af239d7b9de3c462da61d016ae3bdc79719a716309a251bca69b323fccaa4c51"
+    },
+    {
+      "path": "dist/assets/bean-4.webp",
+      "bytes": 344,
+      "sha256": "19f239487de0f233099e94c37aad3eaad1e60f11fd967db6d8ff475b02cefadf"
+    },
+    {
+      "path": "dist/assets/bean-5.webp",
+      "bytes": 1890,
+      "sha256": "4b193ddefdc2634f357276c3c794e6da1a00f181c8186b6d1d035fba275f7e4c"
+    },
+    {
+      "path": "dist/assets/bean-6.webp",
+      "bytes": 2950,
+      "sha256": "865822b920d3f480546964e9deaa1c3f0d5866008d8c67ac5f66e2927e486bb3"
+    },
+    {
+      "path": "dist/assets/cappuccino.webp",
+      "bytes": 13668,
+      "sha256": "362c15c7bf360ffda82f3d595ca17043f4aaaf7d0c050e5babf4763f80dbc586"
+    },
+    {
+      "path": "dist/assets/cup-turn/00.webp",
+      "bytes": 60306,
+      "sha256": "1cd8e99537542c747cfe44037322e51ee5abbb02eeb29fb4f3d1f4bb2d396d4e"
+    },
+    {
+      "path": "dist/assets/cup-turn/01.webp",
+      "bytes": 61594,
+      "sha256": "59625c83ace74442d44c080fa76eed0dcc2ff8d99df75a6a1e1a65a9685fa3e0"
+    },
+    {
+      "path": "dist/assets/cup-turn/02.webp",
+      "bytes": 61814,
+      "sha256": "988c9c6ffaf9cd460f97e1d794b530a3f4fd9a1b5b0bc65e01788bc7a30709b4"
+    },
+    {
+      "path": "dist/assets/cup-turn/03.webp",
+      "bytes": 60428,
+      "sha256": "ab126f3ae123babf2a010f69d391a2d83b065343a93abf92167011c2f5b52c85"
+    },
+    {
+      "path": "dist/assets/cup-turn/04.webp",
+      "bytes": 59832,
+      "sha256": "1a3fdd6cef659da520d0b39982660d505ef9389870b48ec2d69f00b138d18b81"
+    },
+    {
+      "path": "dist/assets/cup-turn/05.webp",
+      "bytes": 58888,
+      "sha256": "8fbea4aa95bb1deb1eff804bb0117a0a4c2dc4118895a157dfa7817183072afe"
+    },
+    {
+      "path": "dist/assets/cup-turn/06.webp",
+      "bytes": 61320,
+      "sha256": "6640ea70af72c47d0e5b8f30cc7c233d011c163927142178076c39169f40919a"
+    },
+    {
+      "path": "dist/assets/cup-turn/07.webp",
+      "bytes": 60110,
+      "sha256": "79d861c53048b68527cf686d213f2fb60de0db4d1d6b407f011ec3aa52e866b5"
+    },
+    {
+      "path": "dist/assets/cup-turn/08.webp",
+      "bytes": 60200,
+      "sha256": "19dbddc05fed0321965c0cf4005c31bd90c37251ce16324b9c1a9c3f59b37aa7"
+    },
+    {
+      "path": "dist/assets/cup-turn/09.webp",
+      "bytes": 58906,
+      "sha256": "3b2ae3ab70015e2f9f7c09a77c15df14fd397622bd1e7f9c4cc7fe57a8240e9c"
+    },
+    {
+      "path": "dist/assets/cup-turn/10.webp",
+      "bytes": 62468,
+      "sha256": "bef4d489c0c992a261c95bd9a28b0666d13f9cc2668ac49fb47748fefbcf425b"
+    },
+    {
+      "path": "dist/assets/cup-turn/11.webp",
+      "bytes": 63558,
+      "sha256": "3cf5c26d5e6c1b29c52f14da963642af850a64619966d2ebc95d205b8ebe256f"
+    },
+    {
+      "path": "dist/assets/cup-turn/12.webp",
+      "bytes": 58774,
+      "sha256": "823cfb7a5838db4ce87673c0be056d734d7fb46a4882eae46ff5117b77b27f43"
+    },
+    {
+      "path": "dist/assets/cup-turn/13.webp",
+      "bytes": 58354,
+      "sha256": "2f2faaf27762752b8a86280c51d78ba6c31bfcd9dc3c3bc749d6ef5672d1458a"
+    },
+    {
+      "path": "dist/assets/cup-turn/14.webp",
+      "bytes": 60942,
+      "sha256": "fc7707325f091210ec00ad92aba3de384c3bb19c6b46b48ffde2666a44fbeea7"
+    },
+    {
+      "path": "dist/assets/cup-turn/15.webp",
+      "bytes": 62380,
+      "sha256": "f59cd5b1a2dac741d27c77bc894c231e581d59661923b158c6da46c197c843b1"
+    },
+    {
+      "path": "dist/assets/cup-turn/16.webp",
+      "bytes": 65618,
+      "sha256": "f77ce1c6b4453e665513b38e598fb758bebeaed8f2662540e1ec232f224ec5d5"
+    },
+    {
+      "path": "dist/assets/cup-turn/17.webp",
+      "bytes": 65274,
+      "sha256": "c6816eca682e11d77ba33a933ba27a440685770d1570ce5c4a9d71cd84b548ea"
+    },
+    {
+      "path": "dist/assets/cup-turn/18.webp",
+      "bytes": 66850,
+      "sha256": "8435f258b3e0a641a6de4acaf6f2a0dcb2a3db98fc4d2fa50bccbf258c7413fb"
+    },
+    {
+      "path": "dist/assets/cup-turn/19.webp",
+      "bytes": 66432,
+      "sha256": "19b7d58dd58541f10f38d297d450830595e58ad81f1039975236d4163f40db42"
+    },
+    {
+      "path": "dist/assets/cup-turn/20.webp",
+      "bytes": 65870,
+      "sha256": "cbbdf5a3e9ccbebfd532485c74ce87601c14d7604b435549fbdbbe4ac20212e5"
+    },
+    {
+      "path": "dist/assets/cup-turn/21.webp",
+      "bytes": 65556,
+      "sha256": "dfb323b30bf80d55b210e25c069db4e0d14c6202aa1cfad71beae3933f2e8550"
+    },
+    {
+      "path": "dist/assets/cup-turn/22.webp",
+      "bytes": 67596,
+      "sha256": "ac1f05122a25042455004858160d7fd0072df157c774de80fa2be27b0d0f24f0"
+    },
+    {
+      "path": "dist/assets/cup-turn/23.webp",
+      "bytes": 67114,
+      "sha256": "3ef5ce96cfa3aa088a7cb63351cfb83ef1cf7ad790ff42272b423673c196274b"
+    },
+    {
+      "path": "dist/assets/favicon.svg",
+      "bytes": 248,
+      "sha256": "d223255b6cd63f7f9cf66fa7f2e5007bf2bdbf249411110958acb727debc8743"
+    },
+    {
+      "path": "dist/assets/hero-art.webp",
+      "bytes": 169556,
+      "sha256": "c80447e0810a191e6cb367098c9b8d8f6b8709f813d4107bb6f48b172f3d30e3"
+    },
+    {
+      "path": "dist/assets/inter-latin.woff2",
+      "bytes": 48256,
+      "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
+    },
+    {
+      "path": "dist/assets/INTER-OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "dist/assets/latte.webp",
+      "bytes": 12122,
+      "sha256": "d692c78e5ce59eea664e8407667c529bd84d8c000236815a9097a1aa82d3d88c"
+    },
+    {
+      "path": "dist/assets/mocha.webp",
+      "bytes": 14444,
+      "sha256": "626deb1772129aaa4ba6ee3e4f111daa26ee16a8808f082752cfc367504382b1"
+    },
+    {
+      "path": "dist/assets/playfair-latin.woff2",
+      "bytes": 23224,
+      "sha256": "28453852ea165c47b5a941be00e418402e1407002ed87507f062a1e316328fe6"
+    },
+    {
+      "path": "dist/assets/PLAYFAIR-OFL.txt",
+      "bytes": 4449,
+      "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e"
+    },
+    {
+      "path": "dist/assets/spoon.webp",
+      "bytes": 38588,
+      "sha256": "0a383306f4567d972b48d8aa99d6cd5ac7238f75762479243c75cd9a3a24419d"
+    },
+    {
+      "path": "dist/beans.js",
+      "bytes": 1021,
+      "sha256": "563a6c513e1845d2710f3e604f265349e9b8a50526be5e3ff550806ff9cca3a4"
+    },
+    {
+      "path": "dist/index.html",
+      "bytes": 8834,
+      "sha256": "324857a6ae3e8085ba5903bac25490015c32a5690b623ced585c35f420f65258"
+    },
+    {
+      "path": "dist/store.js",
+      "bytes": 1726,
+      "sha256": "722d7ddf1605976261f71203072e9be7e1c1afbf286ee10ebdc3d96aef5b7afb"
+    },
+    {
+      "path": "dist/styles.css",
+      "bytes": 18851,
+      "sha256": "8c603ac121c6f78a63b008c70bb2919df2a747569137202d47d2350fc7520d6c"
+    }
+  ],
+  "turn_notes": "Recorded sleeve/light pixels; off-screen ends restored from complete recorded cup"
+}

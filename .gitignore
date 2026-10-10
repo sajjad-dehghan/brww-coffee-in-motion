@@ -1,0 +1,7 @@
+.sites-runtime/
+.sites-checkout/
+node_modules/
+*.zip
+asset-review.jpg
+discovery-review.jpg
+verification/deployment.json
