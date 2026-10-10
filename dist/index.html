@@ -1,91 +1,94 @@
 <!doctype html>
-<html lang="en">
+<html lang="fa" dir="rtl">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#1d120b">
-  <meta name="description" content="Discover BRWW: artisan coffee, a curated selection, and a little inspiration in every sip.">
-  <title>BRWW — Coffee in Motion</title>
+  <meta name="description" content="قهوهٔ خوب، حال خوب؛ منوی BRWW رو بگرد، قهوهٔ موردعلاقه‌ت رو پیدا کن و یه مکث خوش‌طعم به روزت بده.">
+  <title>BRWW — یه جرعه قهوه، یه حال خوب</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/hero-v2.webp" as="image" fetchpriority="high">
+  <link rel="preload" href="assets/pinar/Pinar-DS4-Regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/pinar/Pinar-DS4-Bold.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="styles.css">
   <script type="module" src="app.js"></script>
 </head>
 <body>
-  <a class="skip-link" href="#menu">Skip to coffee menu</a>
+  <a class="skip-link" href="#menu" data-i18n="skip">برو به منوی قهوه</a>
   <svg class="icon-library" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
     <symbol id="user-icon" viewBox="0 0 24 24"><circle cx="12" cy="7.5" r="3.3"/><path d="M5.5 20v-2.3a6.5 6.5 0 0 1 13 0V20"/></symbol>
     <symbol id="cart-icon" viewBox="0 0 24 24"><path d="M2 3h3l2.3 12h12l2.2-8H6"/><circle cx="9" cy="20" r="1"/><circle cx="18" cy="20" r="1"/></symbol>
     <symbol id="close-icon" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
   </defs></svg>
   <header class="site-header">
-    <a class="wordmark" href="#home" aria-label="BRWW home">BRWW</a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#home" class="active" aria-current="page">Home</a>
-      <a href="#menu">Menu</a>
-      <a href="#about">About Us</a>
-      <button type="button" data-dialog="reviews">Reviews</button>
-      <a href="#discover">Promotions</a>
+    <a class="wordmark" href="#home" aria-label="صفحهٔ اصلی BRWW" data-i18n-aria="nav.brand">BRWW</a>
+    <nav class="main-nav" aria-label="منوی اصلی" data-i18n-aria="nav.label">
+      <a href="#home" class="active" aria-current="page" data-i18n="nav.home">خونه</a>
+      <a href="#menu" data-i18n="nav.menu">منو</a>
+      <a href="#about" data-i18n="nav.about">داستان ما</a>
+      <button type="button" data-dialog="reviews" data-i18n="nav.reviews">نظرها</button>
+      <a href="#discover" data-i18n="nav.promotions">قهوهٔ تو</a>
     </nav>
     <div class="header-actions">
-      <button class="round-button" aria-label="Coffee preferences" data-dialog="preferences"><svg><use href="#user-icon"/></svg></button>
-      <button class="round-button cart-toggle" aria-label="Open shopping bag, 0 items" data-dialog="cart"><svg><use href="#cart-icon"/></svg><span class="cart-count" hidden>0</span></button>
-      <button class="button order-button" data-order>Order Now</button>
-      <button class="mobile-toggle" aria-label="Open navigation" aria-expanded="false"><span></span><span></span></button>
+      <button class="round-button" aria-label="سلیقهٔ قهوه‌ت" data-dialog="preferences" data-i18n-aria="preferences.label"><svg><use href="#user-icon"/></svg></button>
+      <button class="round-button cart-toggle" aria-label="باز کردن سبد خرید، ۰ لیوان" data-dialog="cart"><svg><use href="#cart-icon"/></svg><span class="cart-count" hidden>0</span></button>
+      <button class="language-toggle" type="button" data-language-switch data-i18n="language.button" data-i18n-aria="language.switch" aria-label="Switch to English" lang="en" dir="ltr">English</button>
+      <button class="button order-button" data-order data-i18n="order">سفارش بده</button>
+      <button class="mobile-toggle" aria-label="باز کردن منو" aria-expanded="false" data-i18n-aria="nav.open"><span></span><span></span></button>
     </div>
   </header>
   <main>
     <section class="hero" id="home" aria-labelledby="hero-title">
       <div class="hero-copy">
-        <p class="eyebrow"><span></span> Artisan Coffee Brewery · Est. 2010</p>
-        <h1 id="hero-title">Discover the<br><span>Superior</span> Taste<br>Every Sip!</h1>
-        <p class="hero-description">For us, coffee is not just a drink — it's an art. We invite<br class="desktop-break"> you on a unique culinary journey where every sip is a<br class="desktop-break"> meeting with the perfect taste.</p>
-        <a class="button explore-button" href="#menu">Explore Coffee</a>
+        <p class="eyebrow"><span></span><span class="eyebrow-copy" data-i18n="hero.eyebrow">قهوه رو با عشق می‌سازیم · از ۲۰۱۰</span></p>
+        <h1 id="hero-title" data-i18n-html="hero.title">یه جرعه قهوه،<br>یه <span>طعم خفن</span>،<br>یه حال خوب.</h1>
+        <p class="hero-description" data-i18n="hero.description">برای ما قهوه فقط یه نوشیدنی نیست؛ یه حال خوبه که از عطرش شروع می‌شه و تا آخرین جرعه می‌مونه. بیا قهوه‌ای رو پیدا کن که به روزت می‌چسبه.</p>
+        <a class="button explore-button" href="#menu" data-i18n="hero.explore">قهوه‌ها رو ببین</a>
       </div>
-      <img class="hero-art" src="assets/hero-v2.webp" width="552" height="540" alt="Two BRWW artisan coffee cups with a rich splash of coffee" fetchpriority="high">
+      <img class="hero-art" src="assets/hero-v2.webp" width="552" height="540" alt="دو لیوان قهوهٔ BRWW با پاشش قهوه" fetchpriority="high" data-i18n-alt="hero.alt">
       <span class="cross hero-cross" aria-hidden="true"></span>
     </section>
-    <section class="selection" id="menu" aria-label="Curated coffee selection">
-      <div class="marquee" aria-hidden="true"><span>CURATED COFFEE SELECTION · CURATED COFFEE SELECTION · </span></div>
+    <section class="selection" id="menu" aria-label="منوی قهوه‌های BRWW" data-i18n-aria="menu.label">
+      <div class="marquee" aria-hidden="true"><span data-i18n="menu.marquee">قهوه‌های خوش‌طعم ما · قهوه‌های خوش‌طعم ما · </span></div>
       <div class="product-grid">
         <article class="product-card" data-product="cappuccino">
-          <img class="product-image" src="assets/cappuccino-v2.webp" alt="Cappuccino in a speckled yellow BRWW cup" width="135" height="189">
-          <button class="rating" aria-label="Cappuccino rating, 4.9 out of 5" data-rating="cappuccino">4.9 <span>★</span></button>
-          <h2>Cappuccino</h2>
-          <p>A timeless classic: 20% espresso, 40% velvety steamed milk, and 40% airy milk foam. Balanced and smooth.</p>
-          <div class="product-purchase"><span class="price">$4.50</span><button class="add-button" data-add="cappuccino" aria-label="Add Cappuccino to your bag">+</button></div>
+          <img class="product-image" src="assets/cappuccino-v2.webp" alt="کاپوچینو در لیوان زرد و خال‌دار BRWW" width="135" height="189" data-i18n-alt="product.cappuccino.alt">
+          <button class="rating" aria-label="امتیاز کاپوچینو، ۴٫۹ از ۵" data-rating="cappuccino">۴٫۹ <span>★</span></button>
+          <h2 data-i18n="product.cappuccino.name">کاپوچینو</h2>
+          <p data-i18n="product.cappuccino.description">یه کلاسیک همیشه‌خوب: ۲۰٪ اسپرسو، ۴۰٪ شیر گرم و ۴۰٪ کف نرم. نه خیلی تلخ، نه خیلی شیری؛ دقیقاً به‌اندازه.</p>
+          <div class="product-purchase"><span class="price">۴٫۵۰ دلار</span><button class="add-button" data-add="cappuccino" aria-label="افزودن کاپوچینو به سبد">+</button></div>
         </article>
         <article class="product-card" data-product="latte">
-          <img class="product-image" src="assets/latte-v2.webp" alt="Latte in a mint-green BRWW cup" width="141" height="193">
-          <button class="rating" aria-label="Latte rating, 5.0 out of 5" data-rating="latte">5.0 <span>★</span></button>
-          <h2>Latte</h2>
-          <p>Smooth and creamy: 30% espresso and 70% fresh, hot milk. Perfect for a creamy coffee treat.</p>
-          <div class="product-purchase"><span class="price">$5.00</span><button class="add-button" data-add="latte" aria-label="Add Latte to your bag">+</button></div>
+          <img class="product-image" src="assets/latte-v2.webp" alt="لاته در لیوان سبز نعنایی BRWW" width="141" height="193" data-i18n-alt="product.latte.alt">
+          <button class="rating" aria-label="امتیاز لاته، ۵ از ۵" data-rating="latte">۵ <span>★</span></button>
+          <h2 data-i18n="product.latte.name">لاته</h2>
+          <p data-i18n="product.latte.description">نرم، شیری و خوش‌طعم: ۳۰٪ اسپرسو و ۷۰٪ شیر تازه و گرم. برای وقتی که یه قهوهٔ ملایم می‌چسبه.</p>
+          <div class="product-purchase"><span class="price">۵٫۰۰ دلار</span><button class="add-button" data-add="latte" aria-label="افزودن لاته به سبد">+</button></div>
         </article>
         <article class="product-card" data-product="mocha">
-          <img class="product-image" src="assets/mocha-v2.webp" alt="Mocha in a dark ribbed BRWW cup" width="142" height="197">
-          <button class="rating" aria-label="Mocha rating, 4.7 out of 5" data-rating="mocha">4.7 <span>★</span></button>
-          <h2>Mocha</h2>
-          <p>For the chocolate lover: 20% espresso, 50% hot milk, and 30% premium chocolate. Decadently sweet.</p>
-          <div class="product-purchase"><span class="price">$5.00</span><button class="add-button" data-add="mocha" aria-label="Add Mocha to your bag">+</button></div>
+          <img class="product-image" src="assets/mocha-v2.webp" alt="موکا در لیوان تیره و شیاردار BRWW" width="142" height="197" data-i18n-alt="product.mocha.alt">
+          <button class="rating" aria-label="امتیاز موکا، ۴٫۷ از ۵" data-rating="mocha">۴٫۷ <span>★</span></button>
+          <h2 data-i18n="product.mocha.name">موکا</h2>
+          <p data-i18n="product.mocha.description">برای تیم شکلات: ۲۰٪ اسپرسو، ۵۰٪ شیر گرم و ۳۰٪ شکلات خوش‌طعم. یه کم شیرین، یه عالمه دل‌چسب.</p>
+          <div class="product-purchase"><span class="price">۵٫۰۰ دلار</span><button class="add-button" data-add="mocha" aria-label="افزودن موکا به سبد">+</button></div>
         </article>
       </div>
-      <button class="button outline-button full-menu" data-dialog="menu">Explore our full menu</button>
+      <button class="button outline-button full-menu" data-dialog="menu" data-i18n="menu.full">کل منو رو ببین</button>
       <span class="cross menu-cross" aria-hidden="true"></span>
     </section>
     <section class="about" id="about" aria-labelledby="about-title">
-      <h2 class="about-title" id="about-title"><strong>BRWW</strong> IS</h2>
+      <h2 class="about-title" id="about-title" data-i18n-html="about.title"><strong dir="ltr">BRWW</strong> یعنی…</h2>
       <div class="cup-scene" aria-hidden="true"><img id="turning-cup" src="assets/cup-poster-v3.webp" width="680" height="960" alt=""></div>
       <div class="benefits">
-        <article class="benefit benefit-one"><span class="benefit-number" aria-hidden="true">1</span><h3>Premium Bean Quality</h3><p>Our passion for coffee begins with selecting the finest beans. We pay attention to every detail so that each cup delivers exceptional quality and pleasure. We don't just pour coffee — we immerse you in a world of unforgettable flavours.</p></article>
-        <article class="benefit benefit-two"><span class="benefit-number" aria-hidden="true">2</span><h3>Atmosphere of<br>Inspiration</h3><p>Our cozy space is filled with warmth and comfort. Here, surrounded by attentive service, you can relax, enjoy a cup of coffee, and be inspired by pleasant conversation.</p></article>
-        <article class="benefit benefit-three"><span class="benefit-number" aria-hidden="true">3</span><h3>Personalised Approach<br>to Every Guest</h3><p>We craft coffee that reflects your preferences, creating unique drinks especially for you. With us it's not just coffee — it's a personalised experience, so every visit becomes a memorable occasion.</p></article>
-        <article class="benefit benefit-four"><span class="benefit-number" aria-hidden="true">4</span><h3>Professional Barista<br>Team</h3><p>Our baristas have extensive experience in brewing coffee and are ready to demonstrate all their exceptional talents in the art of coffee-making.</p></article>
+        <article class="benefit benefit-one"><span class="benefit-number" aria-hidden="true" data-i18n="benefit.1.number">۱</span><h3 data-i18n-html="benefit.1.title">همه‌چی از دونهٔ خوب شروع می‌شه</h3><p data-i18n="benefit.1.description">حال خوبِ یه فنجون از دونه‌هاش شروع می‌شه. بهترین‌ها رو انتخاب می‌کنیم و حواسمون به ریزترین جزئیاته؛ از عطر اول تا جرعهٔ آخر. می‌خوایم هر بار یه طعم به‌یادموندنی باهات بمونه.</p></article>
+        <article class="benefit benefit-two"><span class="benefit-number" aria-hidden="true" data-i18n="benefit.2.number">۲</span><h3 data-i18n-html="benefit.2.title">یه گوشهٔ دنج،<br>یه عالمه حال خوب</h3><p data-i18n="benefit.2.description">یه جای گرم و خودمونی برای یه مکث کوتاه. قهوه‌ت رو بردار، راحت بشین و از یه گپ خوب یا چند دقیقه خلوت لذت ببر. اینجا عجله‌ای نداریم.</p></article>
+        <article class="benefit benefit-three"><span class="benefit-number" aria-hidden="true" data-i18n="benefit.3.number">۳</span><h3 data-i18n-html="benefit.3.title">قهوه‌ای که<br>به سلیقه‌ت می‌چسبه</h3><p data-i18n="benefit.3.description">یکی قهوه‌ش رو تلخ دوست داره، یکی نرم و شیری. ما حواسمون به سلیقه‌ته و کمک می‌کنیم ترکیب خودت رو پیدا کنی؛ همون فنجونی که بگی «آره، خودشه!»</p></article>
+        <article class="benefit benefit-four"><span class="benefit-number" aria-hidden="true" data-i18n="benefit.4.number">۴</span><h3 data-i18n-html="benefit.4.title">پشت هر فنجون،<br>یه باریستای کاربلد</h3><p data-i18n="benefit.4.description">تیم ما قهوه رو می‌شناسه و با حوصله درستش می‌کنه. از تنظیم آسیاب تا یه لایه کف نرم، هر جزئیات کوچیک برای یه فنجون درست‌وحسابی مهمه.</p></article>
       </div>
-      <button class="button outline-button about-order" data-order>Order Now</button>
+      <button class="button outline-button about-order" data-order data-i18n="order">سفارش بده</button>
     </section>
     <section class="discovery" id="discover" aria-labelledby="discover-title">
-      <div class="discovery-card"><h2 id="discover-title">Find out which coffee suits you best</h2><button class="button outline-button test-button" data-dialog="quiz">Take the test</button></div>
+      <div class="discovery-card"><h2 id="discover-title" data-i18n="discovery.title">کدوم قهوه بیشتر بهت می‌چسبه؟</h2><button class="button outline-button test-button" data-dialog="quiz" data-i18n="discovery.test">بیا پیداش کنیم</button></div>
       <div class="bean-scene" aria-hidden="true">
         <img class="bean bean-one" src="assets/bean-1.webp" width="424" height="281" alt="">
         <img class="bean bean-two" src="assets/bean-2.webp" width="64" height="71" alt="">
@@ -98,8 +101,8 @@
       <span class="cross discovery-cross" aria-hidden="true"></span>
     </section>
   </main>
-  <footer class="site-footer"><button data-dialog="news">Coffee news</button><a href="https://telegram.org/" target="_blank" rel="noopener noreferrer">Telegram</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></footer>
+  <footer class="site-footer"><button data-dialog="news" data-i18n="footer.news">گپ قهوه‌ای</button><a href="https://telegram.org/" target="_blank" rel="noopener noreferrer" data-i18n="footer.telegram">تلگرام</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" data-i18n="footer.instagram">اینستاگرام</a></footer>
   <div class="toast" role="status" aria-live="polite"></div>
-  <dialog class="panel" id="site-panel" aria-labelledby="panel-title"><button class="panel-close round-button" aria-label="Close dialog"><svg><use href="#close-icon"/></svg></button><div id="panel-content"></div></dialog>
+  <dialog class="panel" id="site-panel" aria-labelledby="panel-title"><button class="panel-close round-button" aria-label="بستن پنجره" data-i18n-aria="dialog.close"><svg><use href="#close-icon"/></svg></button><div id="panel-content"></div></dialog>
 </body>
 </html>

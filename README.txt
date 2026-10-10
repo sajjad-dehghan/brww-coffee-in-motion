@@ -115,3 +115,11 @@ transparent artwork margins do not. Pointer movement is coalesced with RAF; CSS
 smooths following and return. Touch and reduced motion remain still. Scrolling,
 window resize and tab hiding reset the effect. No WebGL is required for this effect.
 See verification/hero-depth-verification.json and hero-depth-preview.gif.
+
+PERSIAN AND ENGLISH
+-------------------
+Persian is the default, with locally hosted Pinar, RTL layout and Persian digits.
+All page copy, dialogs, quiz and accessibility labels have both translations.
+The header switch preserves cart state; its choice is saved on this browser.
+URL ?lang=fa or ?lang=en overrides the saved preference. Prices remain USD.
+See dist/i18n.js, dist/locales.js and verification/bilingual-verification.json.

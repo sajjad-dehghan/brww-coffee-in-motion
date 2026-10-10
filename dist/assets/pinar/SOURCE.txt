@@ -1,0 +1,7 @@
+Pinar DS4 webfonts
+Regular 400, Medium 500, SemiBold 600, Bold 700.
+
+Integrated at the user's explicit request from their existing local font assets.
+No fonts were downloaded from third-party redistribution sites.
+These files are not covered by the Inter / Playfair OFL licenses.
+Font rights remain with the respective font owner.

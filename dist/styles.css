@@ -1,4 +1,8 @@
 @charset "UTF-8";
+@font-face{font-family:Pinar;src:url('assets/pinar/Pinar-DS4-Regular.woff2') format('woff2');font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:Pinar;src:url('assets/pinar/Pinar-DS4-Medium.woff2') format('woff2');font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:Pinar;src:url('assets/pinar/Pinar-DS4-SemiBold.woff2') format('woff2');font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:Pinar;src:url('assets/pinar/Pinar-DS4-Bold.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
 @font-face{font-family:Inter;src:url('assets/inter-latin.woff2') format('woff2');font-weight:400 700;font-style:normal;font-display:swap}
 @font-face{font-family:Playfair;src:url('assets/playfair-latin.woff2') format('woff2');font-weight:700;font-style:normal;font-display:swap}
 :root{font-size:clamp(.7px,.1041666667vw,1.6667px);--background:#1d120b;--cream:#e8dfc9;--muted:#93836b;--sage:#637b67;--mint:#82b5a3;--surface:#342a20;--line:rgba(232,223,201,.13);color-scheme:dark}
@@ -54,3 +58,105 @@ main{overflow-x:clip}
 .hero-art{transform-origin:55% 65%;transform:perspective(1400rem) translate3d(var(--hero-x,0rem),var(--hero-y,0rem),var(--hero-z,0rem)) rotateX(var(--hero-rx,0deg)) rotateY(var(--hero-ry,0deg)) rotateZ(var(--hero-rz,0deg)) scale(var(--hero-scale,1));filter:drop-shadow(0 5rem 5rem #0005) drop-shadow(0 20rem 18rem #0004);transition:transform .45s cubic-bezier(.22,1,.36,1),filter .35s ease-out}
 .hero-art.depth-active{will-change:transform;filter:drop-shadow(0 7rem 6rem #0005) drop-shadow(0 25rem 21rem #0005);transition:transform .18s ease-out,filter .35s ease-out}
 @media(hover:none),(pointer:coarse),(prefers-reduced-motion:reduce){.hero-art,.hero-art.depth-active{transform:none;will-change:auto}}
+
+/* Bilingual layout: Persian is the initial HTML; English retains the original composition. */
+.language-toggle{height:34rem;min-width:54rem;padding:0 9rem;border:1rem solid var(--line);border-radius:30rem;background:#1b120ba8;color:var(--cream);font:500 11rem/1.4 Inter,sans-serif;transition:background .2s}
+.language-toggle:hover{background:#33291d}
+.language-toggle[lang=fa]{font-family:Pinar,sans-serif}
+.eyebrow>.eyebrow-copy{width:auto;height:auto;border-radius:0;background:none;flex:initial}
+.wordmark{direction:ltr;font-family:Inter,sans-serif}
+.panel-options label.option-button{display:flex;align-items:center}
+.panel-options input[type=radio]{width:auto;margin:0;margin-inline-end:9px;flex:none}
+.panel-item .item-copy{min-width:0}
+.panel-item strong,.cart-total strong{white-space:nowrap}
+html[lang=fa] body{font-family:Pinar,Inter,sans-serif}
+html[lang=fa] .skip-link{left:auto;right:10px}
+html[lang=fa] .main-nav{left:auto;right:169rem}
+html[lang=fa] .main-nav a,html[lang=fa] .main-nav button{font-size:12rem;padding-inline:14rem}
+html[lang=fa] .hero-copy{left:auto;right:57rem;text-align:right}
+html[lang=fa] .hero h1{font-family:Pinar,sans-serif;font-size:45rem;line-height:1.43;letter-spacing:0;width:380rem}
+html[lang=fa] .hero-description{font-size:14rem;line-height:1.85;width:365rem}
+html[lang=fa] .explore-button{margin-top:24rem}
+html[lang=fa] .hero-art{left:auto;right:338rem}
+html[lang=fa] .eyebrow{width:246rem;letter-spacing:0;font-size:11rem}
+html[lang=fa] .button{font-size:12.5rem}
+html[lang=fa] .marquee{font-family:Pinar,sans-serif;letter-spacing:0;font-size:70rem}
+html[lang=fa] .product-card h2{font-family:Pinar,sans-serif;letter-spacing:0;font-size:23rem;line-height:1.45}
+html[lang=fa] .product-card p{font-size:12rem;line-height:1.75}
+html[lang=fa] .product-card{padding-top:78rem;height:244rem}
+html[lang=fa] .product-purchase{margin-top:13rem}
+html[lang=fa] .price{font-size:18rem;line-height:1.5}
+html[lang=fa] .rating{direction:rtl;font-size:10rem}
+html[lang=fa] .about-title{font-family:Pinar,sans-serif;letter-spacing:0}
+html[lang=fa] .about-title strong{font-family:Inter,sans-serif}
+html[lang=fa] .benefit{text-align:right}
+html[lang=fa] .benefit h3{font-size:16rem;line-height:1.6;letter-spacing:0}
+html[lang=fa] .benefit p{font-size:12rem;line-height:1.85}
+html[lang=fa] .benefit-one,html[lang=fa] .benefit-two{left:auto;right:91rem}
+html[lang=fa] .benefit-three,html[lang=fa] .benefit-four{right:auto;left:91rem}
+html[lang=fa] .benefit-number{font-family:Pinar,sans-serif;left:auto;right:-42rem}
+html[lang=fa] .benefit-three .benefit-number,html[lang=fa] .benefit-four .benefit-number{right:auto;left:-42rem}
+html[lang=fa] .benefit.scroll-reveal{transform:translateX(38rem)}
+html[lang=fa] .benefit-three.scroll-reveal,html[lang=fa] .benefit-four.scroll-reveal{transform:translateX(-38rem)}
+html[lang=fa] .benefit.scroll-reveal.revealed{transform:translateX(0)}
+html[lang=fa] .discovery-card{text-align:right}
+html[lang=fa] .discovery-card h2{font-family:Pinar,sans-serif;font-size:24rem;line-height:1.65;letter-spacing:0;max-width:450rem}
+html[lang=fa] .bean-scene .discovery-art{left:auto;right:446rem;scale:-1 1}
+html[lang=fa] .site-footer{font-size:11rem}
+html[lang=fa] .toast,html[lang=fa] .panel{font-family:Pinar,sans-serif;letter-spacing:0;line-height:1.85}
+html[lang=fa] .panel{font-size:14px;text-align:right}
+html[lang=fa] .panel h2{font-family:Pinar,sans-serif;font-size:28px;line-height:1.65;letter-spacing:0}
+html[lang=fa] .panel h3{line-height:1.65}
+html[lang=fa] .panel-eyebrow{letter-spacing:0;font-size:12px}
+html[lang=fa] .option-button{text-align:right;line-height:1.8}
+html[lang=fa] .panel-close{right:auto;left:16px}
+html[lang=fa] .panel-item p{font-size:12px}
+html[lang=fa] .panel .button{font-size:14px;line-height:1.65}
+
+@media(max-width:680px){
+  .language-toggle{height:33px;min-width:50px;padding:0 7px;font-size:10px}
+  html[lang=fa] .main-nav{left:0;right:0}
+  html[lang=fa] .main-nav a,html[lang=fa] .main-nav button{text-align:right;font-size:14px;padding:10px 15px}
+  html[lang=fa] .full-menu,html[lang=fa] .about-order{display:flex;left:auto;transform:none;margin-inline:auto}
+  html[lang=fa] .full-menu:hover,html[lang=fa] .about-order:hover{transform:translateY(-2px)}
+  html[lang=fa] .hero{height:1010px}
+  html[lang=fa] .hero-copy{left:24px;right:24px}
+  html[lang=fa] .hero h1{font-size:clamp(33px,9.2vw,48px);line-height:1.48;width:100%}
+  html[lang=fa] .eyebrow{width:246px;font-size:11px}
+  html[lang=fa] .hero-description{font-size:13px;line-height:1.9;width:min(360px,100%)}
+  html[lang=fa] .explore-button{margin-top:23px}
+  html[lang=fa] .hero-art{left:calc(50% - 220px);right:auto;top:520px}
+  html[lang=fa] .button{font-size:12px}
+  html[lang=fa] .order-button{font-size:11px;width:90px}
+  html[lang=fa] .product-card{height:265px;padding:83px 24px 20px}
+  html[lang=fa] .product-card h2{font-size:26px;line-height:1.5}
+  html[lang=fa] .product-card p{font-size:13px;line-height:1.85;min-height:72px}
+  html[lang=fa] .product-purchase{margin-top:12px}
+  html[lang=fa] .price{font-size:21px}
+  html[lang=fa] .rating{font-size:11px}
+  html[lang=fa] .marquee{font-size:48px}
+  html[lang=fa] .benefit-one,html[lang=fa] .benefit-two,html[lang=fa] .benefit-three,html[lang=fa] .benefit-four{left:auto;right:auto}
+  html[lang=fa] .benefit h3{font-size:15px;line-height:1.65}
+  html[lang=fa] .benefit p{font-size:12px;line-height:1.9}
+  html[lang=fa] .benefit-number{right:-12px!important;left:auto!important}
+  html[lang=fa] .benefit.scroll-reveal{transform:translateX(20px)}
+  html[lang=fa] .benefit-three.scroll-reveal,html[lang=fa] .benefit-four.scroll-reveal{transform:translateX(-20px)}
+  html[lang=fa] .benefit.scroll-reveal.revealed{transform:translateX(0)}
+  html[lang=fa] .discovery-card h2{font-size:22px;line-height:1.65;max-width:270px}
+  html[lang=fa] .bean-scene{left:auto;right:calc(100% - 340px);transform-origin:bottom left}
+  html[lang=fa] .bean-scene .discovery-art{left:auto;right:-36px}
+  html[lang=fa] .site-footer{font-size:11px}
+  html[lang=fa] .panel h2{font-size:25px}
+}
+@media(max-width:359px){
+  .language-toggle{min-width:46px;padding-inline:5px}
+  .round-button{width:31px;height:31px}
+  .order-button{width:84px;font-size:10.5px}
+  html[lang=fa] .order-button{width:80px;font-size:10.5px}
+  html[lang=fa] .hero{height:1000px}
+  html[lang=fa] .hero-copy{left:20px;right:20px}
+  html[lang=fa] .hero-art{left:calc(50% - 205px);top:545px}
+  html[lang=fa] .benefit h3{font-size:16px}
+  html[lang=fa] .benefit p{font-size:13px}
+}
+@media(prefers-reduced-motion:reduce){html[lang=fa] .benefit.scroll-reveal{opacity:1;transform:none}}

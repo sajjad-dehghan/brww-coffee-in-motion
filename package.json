@@ -6,7 +6,7 @@
   "type": "module",
   "scripts": {
     "dev": "node tools/server.mjs",
-    "check": "node --check dist/app.js && node --check dist/store.js && node --check dist/hero-depth.js && node --check dist/cup-model.js && node --check dist/cup-scene.js && node --check dist/beans.js && node --test tests/store.test.mjs"
+    "check": "node --check dist/app.js && node --check dist/store.js && node --check dist/i18n.js && node --check dist/locales.js && node --check dist/hero-depth.js && node --check dist/cup-model.js && node --check dist/cup-scene.js && node --check dist/beans.js && node --test tests/*.test.mjs"
   },
   "engines": { "node": ">=20" },
   "author": "Sajjad Dehghan",

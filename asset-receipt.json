@@ -1,10 +1,20 @@
 {
-  "revision": "v5-hero-pointer-depth",
+  "revision": "v6-persian-first-bilingual",
   "files": [
     {
       "path": "dist/app.js",
-      "bytes": 15210,
-      "sha256": "c4ca9613e6572bb27aa49ee2535bd97a99cb48d920372a5ea909f87782f89722"
+      "bytes": 16175,
+      "sha256": "68237085f6d1edc6930edebb17c2fc7a7e53c2ea20c5acc9573eff3560809c70"
+    },
+    {
+      "path": "dist/assets/INTER-OFL.txt",
+      "bytes": 4377,
+      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
+    },
+    {
+      "path": "dist/assets/PLAYFAIR-OFL.txt",
+      "bytes": 4449,
+      "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e"
     },
     {
       "path": "dist/assets/airborne-00.webp",
@@ -267,11 +277,6 @@
       "sha256": "3100e775e8616cd2611beecfa23a4263d7037586789b43f035236a2e6fbd4c62"
     },
     {
-      "path": "dist/assets/INTER-OFL.txt",
-      "bytes": 4377,
-      "sha256": "5b9321a4298cfeb6b34354164a1c3afc3db114569984c502b9b35d988fd58c57"
-    },
-    {
       "path": "dist/assets/latte-v2.webp",
       "bytes": 277160,
       "sha256": "67f5a70f1272c1a9c90f319e190e327a724bb11bbe00ef4e07f1836f5b2acad3"
@@ -297,14 +302,34 @@
       "sha256": "e799bceab4eee61cf05f3d257ffe9a3bc32418aace27be13cbd0318ddb1b28c7"
     },
     {
+      "path": "dist/assets/pinar/Pinar-DS4-Bold.woff2",
+      "bytes": 45688,
+      "sha256": "bf81fe1ca172f181c8ea28e8ca1bb090121eea002cb508498375dd524cee2436"
+    },
+    {
+      "path": "dist/assets/pinar/Pinar-DS4-Medium.woff2",
+      "bytes": 45432,
+      "sha256": "59f1bfd5549f9539322614cbf12a92d4fd58e720b5801ac6f87d8e93311adbca"
+    },
+    {
+      "path": "dist/assets/pinar/Pinar-DS4-Regular.woff2",
+      "bytes": 45260,
+      "sha256": "02046915f9e0e84cd9d6986a698e933e800249ee205992a03c04a0e7357c4ba9"
+    },
+    {
+      "path": "dist/assets/pinar/Pinar-DS4-SemiBold.woff2",
+      "bytes": 45388,
+      "sha256": "b62347c7511f597bcf9d838607d2dfe2dfca8e072fda81fde2024be51644c389"
+    },
+    {
+      "path": "dist/assets/pinar/SOURCE.txt",
+      "bytes": 331,
+      "sha256": "d92ffdde6b36526128929a0f85afd75f14f83a87277bc3ffe6ca60659525e7dc"
+    },
+    {
       "path": "dist/assets/playfair-latin.woff2",
       "bytes": 23224,
       "sha256": "28453852ea165c47b5a941be00e418402e1407002ed87507f062a1e316328fe6"
-    },
-    {
-      "path": "dist/assets/PLAYFAIR-OFL.txt",
-      "bytes": 4449,
-      "sha256": "566be814f8e96e93dfa16101331557eb6b5467e9e03f627c0910fe93ca12300e"
     },
     {
       "path": "dist/assets/sleeve-texture-v2.webp",
@@ -337,19 +362,29 @@
       "sha256": "b14e0f4f7bd8279f60f22f867ea890e5dadee078446653d58673c77c2d642050"
     },
     {
+      "path": "dist/i18n.js",
+      "bytes": 2495,
+      "sha256": "bc0ae46aacebb1135d586de8aefb080b8dc13c50bf3c7fd55dd0ebb353cf4a91"
+    },
+    {
       "path": "dist/index.html",
-      "bytes": 8926,
-      "sha256": "ce321abf86929f0a3c2e0cbaec55d5bc7e565cab80c0d5941abec20a62ede979"
+      "bytes": 12036,
+      "sha256": "c992046502b581167441257dfde44e28b2d59a42cca752fa11e78a28a7c81514"
+    },
+    {
+      "path": "dist/locales.js",
+      "bytes": 16175,
+      "sha256": "e25b716d4a469f88f5b14b86915d15c4c92f5e07c42cc3ee90ae7bb6244aa041"
     },
     {
       "path": "dist/store.js",
-      "bytes": 1735,
-      "sha256": "3b9a9d405df820be03993a9a3a56c36485899b93f79541150c59523d710a8cfe"
+      "bytes": 1894,
+      "sha256": "42dca5ba0019d758d877598e439e6092e33afd566617ef9364af3369b1e0eeca"
     },
     {
       "path": "dist/styles.css",
-      "bytes": 22254,
-      "sha256": "87a58dd603c869e82fcea1a35d10324c5a7067f301c839828c3df8326527d3dc"
+      "bytes": 29483,
+      "sha256": "3b5a0b237cf2d92a7749c87716bf36f20c4f130db4abd664410ee9ddfce0437f"
     },
     {
       "path": "dist/vendor/THREE-LICENSE.txt",

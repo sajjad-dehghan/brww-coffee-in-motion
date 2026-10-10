@@ -1,0 +1,67 @@
+{
+  "date": "2026-10-10",
+  "default_language": "fa",
+  "languages": [
+    "fa",
+    "en"
+  ],
+  "translation_keys": 113,
+  "font": {
+    "family": "Pinar",
+    "source": "Existing owner-supplied local font assets",
+    "weights": [
+      400,
+      500,
+      600,
+      700
+    ],
+    "delivery": "Local WOFF2",
+    "loaded_in_browser": true
+  },
+  "browser": "Codex in-app browser",
+  "viewports": [
+    [
+      1280,
+      720
+    ],
+    [
+      390,
+      844
+    ],
+    [
+      320,
+      844
+    ]
+  ],
+  "checks": {
+    "fresh_visit_defaults_to_farsi": "passed",
+    "language_switch_without_reload": "passed",
+    "english_choice_persists_after_reload_and_unparameterized_visit": "passed",
+    "explicit_url_overrides_preference": "passed",
+    "cart_retained_after_switch": "passed",
+    "two_cappuccinos_total": "۹٫۰۰ دلار",
+    "three_step_quiz_mocha_result": "passed",
+    "rtl_desktop_composition": "passed",
+    "rtl_mobile_composition_and_centered_buttons": "passed",
+    "english_mobile_header_spacing": "passed",
+    "horizontal_overflow": false,
+    "about_scroll_entrances_and_webgl2_renderer": "passed",
+    "mobile_discovery_composition": "passed",
+    "console_errors_and_warnings": []
+  },
+  "automated_checks": {
+    "command": "npm run check",
+    "passed": 6,
+    "failed": 0
+  },
+  "scope": "All page content, dialogs, accessibility labels and number formatting are bilingual. USD prices retain their original values. Existing motion pipeline preserved.",
+  "limits": [
+    "Native Firefox was not connected for direct verification in this update."
+  ],
+  "screenshots": [
+    "docs/media/hero-fa.jpg",
+    "docs/media/menu-fa.jpg",
+    "docs/media/about-fa.jpg",
+    "docs/media/mobile-fa.jpg"
+  ]
+}

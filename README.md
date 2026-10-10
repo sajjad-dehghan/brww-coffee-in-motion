@@ -16,11 +16,13 @@
   <a href="https://github.com/sajjad-dehghan/brww-coffee-in-motion/actions/workflows/pages.yml"><img alt="Checks and deployment" src="https://github.com/sajjad-dehghan/brww-coffee-in-motion/actions/workflows/pages.yml/badge.svg"></a>
 </p>
 
-A warm, cinematic coffee storefront with tactile artwork, an automatically turning 3D cup, and carefully paced motion. A portfolio project by **[Sajjad Dehghan](https://github.com/sajjad-dehghan)** exploring how a visual reference becomes a working, responsive web experience.
+A Persian-first, bilingual coffee storefront with tactile artwork, an automatically turning 3D cup, and carefully paced motion. A portfolio project by **[Sajjad Dehghan](https://github.com/sajjad-dehghan)** exploring how a visual reference becomes a working, responsive web experience.
 
-![The BRWW homepage: two floating cups, a coffee splash, warm typography and sage accents](docs/media/hero.jpg)
+![The BRWW homepage: two floating cups, a coffee splash, warm typography and sage accents](docs/media/hero-fa.jpg)
 
 ## The experience
+
+- **Persian first, English one click away.** Conversational Persian copy, locally hosted Pinar typography, a mirrored RTL composition, Persian digits, and a remembered language choice. Switching language preserves the shopping bag and the running 3D scene. [Open in English](https://sajjad-dehghan.github.io/brww-coffee-in-motion/?lang=en).
 
 - **Tactile hero artwork.** Alpha-aware pointer detection gives the cups a gentle perspective lift and soft shadows, without moving the headline or navigation.
 - **A real 3D cup.** A seven-part editable Three.js model, textured paper and kraft materials, warm lighting, and a smooth 14-second automatic turn independent of scrolling.
@@ -53,12 +55,12 @@ The spoon and beans move together, with a soft rise and fall that continues with
 
 ## A closer look
 
-![Three coffee products with individual artwork and functioning add-to-bag controls](docs/media/menu.jpg)
+![Three coffee products with individual artwork and functioning add-to-bag controls](docs/media/menu-fa.jpg)
 
 <p align="center">
-  <img src="docs/media/about.jpg" alt="The live Three.js cup between feature descriptions" width="65%">
+  <img src="docs/media/about-fa.jpg" alt="The live Three.js cup between feature descriptions" width="65%">
   &nbsp;
-  <img src="docs/media/mobile-hero.jpg" alt="The responsive mobile homepage" width="30%">
+  <img src="docs/media/mobile-fa.jpg" alt="The responsive mobile homepage" width="30%">
 </p>
 
 <details>
@@ -84,6 +86,8 @@ This is a reference reconstruction, with a newly adapted mobile composition. Ori
 HTML + CSS + ES modules
  ├─ hero-depth.js      Pointer hit mask, perspective and smooth return
  ├─ app.js            Navigation, dialogs, quiz and visibility lifecycle
+ ├─ i18n.js            Language selection, DOM translations and formatting
+ ├─ locales.js         Complete Persian and English dictionaries
  ├─ store.js          Product data, cart rules and recommendations
  └─ cup-scene.js       Lighting, materials and automatic rotation
      └─ cup-model.js   Editable seven-part cup geometry
@@ -109,11 +113,13 @@ Open **http://127.0.0.1:5188/**. To validate JavaScript and ordering logic:
 npm run check
 ```
 
+The initial language is Persian. Use the header switch or `/?lang=en` for English, and `/?lang=fa` for Persian. A saved selection applies on return; an explicit URL language takes precedence. Prices keep their original USD values in both languages.
+
 To inspect rendering fallbacks, open `/?cup-renderer=image#about` for video, or `/?cup-renderer=webp#about` for animated WebP.
 
 ## Verification and scope
 
-The saved browser checks cover desktop and mobile layouts, pointer depth, independent scroll entrances, automatic cup movement, both fallback paths, and dialog interaction. Store tests exercise cart sanitisation, quantity updates, totals and recommendations. CI runs syntax checks and the store tests before publishing `dist/` to GitHub Pages.
+The saved browser checks cover desktop and mobile layouts, pointer depth, independent scroll entrances, automatic cup movement, both fallback paths, and dialog interaction. Store tests exercise cart sanitisation, quantity updates, totals and recommendations. Persian and English were checked at desktop and mobile widths, including a 320 px layout, cart totals and the complete Persian quiz. Translation tests cover dictionary parity, language precedence, placeholders and number formatting. CI runs syntax checks and the store and translation tests before publishing `dist/` to GitHub Pages.
 
 Native Firefox and OS-level reduced-motion emulation were unavailable for direct testing; those paths should be verified on target devices. See the [verification record](verification/verification.json) for the recorded checks and their limits.
 
@@ -124,6 +130,7 @@ The shopping bag, quiz and preferences work locally in the browser. Account auth
 - **Visual reference:** [Scrolltide / Coffee](https://www.scrolltide.co/templates/coffee). Original design rights remain with their respective owners.
 - **Implementation & direction:** [Sajjad Dehghan](https://github.com/sajjad-dehghan), with AI-assisted development and artwork.
 - **3D runtime:** Three.js — [MIT license](dist/vendor/THREE-LICENSE.txt).
-- **Typography:** Inter and Playfair Display — [Inter OFL](dist/assets/INTER-OFL.txt), [Playfair OFL](dist/assets/PLAYFAIR-OFL.txt).
+- **Persian typography:** Pinar, supplied from the owner’s existing local font assets; [source note](dist/assets/pinar/SOURCE.txt). Pinar is not covered by the other fonts’ OFL files.
+- **English typography:** Inter and Playfair Display — [Inter OFL](dist/assets/INTER-OFL.txt), [Playfair OFL](dist/assets/PLAYFAIR-OFL.txt).
 
 <p align="center"><sub>Warm textures. Quiet motion. A little inspiration in every sip.</sub></p>

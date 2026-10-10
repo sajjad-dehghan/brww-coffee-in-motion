@@ -3,7 +3,9 @@ export const products = Object.freeze([
   { id: 'latte', name: 'Latte', cents: 500, rating: '5.0', note: 'Smooth espresso with fresh, creamy milk.', image: 'assets/latte-v2.webp' },
   { id: 'mocha', name: 'Mocha', cents: 500, rating: '4.7', note: 'Espresso, hot milk and premium chocolate.', image: 'assets/mocha-v2.webp' }
 ]);
-export const money = cents => new Intl.NumberFormat('en-US', {style:'currency',currency:'USD'}).format(cents/100);
+export const money = (cents, language = 'en') => language === 'fa'
+  ? `${new Intl.NumberFormat('fa-IR', {minimumFractionDigits:2,maximumFractionDigits:2}).format(cents/100)} دلار`
+  : new Intl.NumberFormat('en-US', {style:'currency',currency:'USD'}).format(cents/100);
 export function sanitiseCart(value) {
   if(!Array.isArray(value)) return [];
   return products.flatMap(p => {

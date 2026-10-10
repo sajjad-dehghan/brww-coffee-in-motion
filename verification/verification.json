@@ -241,5 +241,15 @@
       "touch_and_os_reduced_motion_runtime": "not emulated"
     },
     "preview": "hero-depth-preview.gif"
+  },
+  "bilingual_experience": {
+    "default": "fa",
+    "languages": [
+      "fa",
+      "en"
+    ],
+    "font": "Pinar",
+    "record": "bilingual-verification.json",
+    "checks": "passed"
   }
 }
