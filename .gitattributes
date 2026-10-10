@@ -1,0 +1,6 @@
+# Keep the language chart focused on the website; retain asset tooling in source.
+tools/*.py linguist-detectable=false
+artwork/** linguist-detectable=false
+verification/** linguist-detectable=false
+docs/media/** linguist-detectable=false
+dist/vendor/** linguist-vendored
